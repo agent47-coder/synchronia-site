@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synchronia Labs — Institut d'ingénierie des systèmes intelligents</title>
+<meta name="description" content="Synchronia Labs — cabinet d'architecture des systèmes intelligents à Alger. Doctrine, produits SaaS, développement, audit & conseil, formation, R&D, écosystème.">
+<link rel="canonical" href="https://www.synchronia-labs.ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Synchronia Labs">
+<meta property="og:title" content="Synchronia Labs — L'IA n'est pas un logiciel. C'est une architecture.">
+<meta property="og:description" content="Institut d'ingénierie des systèmes intelligents à Alger. Nous concevons, construisons et faisons évoluer des systèmes d'IA souverains — ERP, vision, agents — déployés chez vous.">
+<meta property="og:url" content="https://www.synchronia-labs.ai/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://www.synchronia-labs.ai/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Synchronia Labs — L'IA n'est pas un logiciel. C'est une architecture.">
+<meta name="twitter:description" content="Institut d'ingénierie des systèmes intelligents à Alger. Systèmes d'IA souverains, déployés et vérifiables.">
+<meta name="twitter:image" content="https://www.synchronia-labs.ai/assets/og-cover.jpg">
+<meta name="theme-color" content="#0A0B0F">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.synchronia-labs.ai/#organization",
+      "name": "Synchronia Labs",
+      "alternateName": ["Synchronia", "Synchronia Labs — Institut d'ingénierie des systèmes intelligents"],
+      "url": "https://www.synchronia-labs.ai/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.synchronia-labs.ai/#logo",
+        "url": "https://www.synchronia-labs.ai/assets/logo.jpg",
+        "caption": "Synchronia Labs"
+      },
+      "image": { "@id": "https://www.synchronia-labs.ai/#logo" },
+      "description": "Institut d'ingénierie des systèmes d'intelligence artificielle et d'architectures cognitives souveraines. Déploiement local (on-premise), systèmes multi-agents, vision par ordinateur et ERP intelligents.",
+      "email": "contact@synchronia-labs.ai",
+      "telephone": "+213559162730",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dar El Beida",
+        "addressLocality": "Alger",
+        "addressRegion": "Alger",
+        "postalCode": "16033",
+        "addressCountry": "DZ"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 36.7133, "longitude": 3.2125 },
+      "founder": { "@id": "https://www.synchronia-labs.ai/#nabil-aknine" },
+      "areaServed": "DZ",
+      "knowsAbout": [
+        "Architecture cognitive",
+        "Systèmes multi-agents",
+        "Souveraineté des données",
+        "Intelligence artificielle souveraine",
+        "Vision par ordinateur",
+        "Edge AI",
+        "RAG d'entreprise",
+        "ERP intelligents"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.synchronia-labs.ai/#nabil-aknine",
+      "name": "Nabil Aknine",
+      "jobTitle": "Fondateur & Architecte Cognitif en Chef",
+      "sameAs": ["https://www.linkedin.com/in/nabil-aknine-198318382"],
+      "worksFor": { "@id": "https://www.synchronia-labs.ai/#organization" },
+      "description": "Ingénieur système et fondateur de Synchronia Labs. Spécialiste des architectures cognitives souveraines et des systèmes d'IA multi-agents.",
+      "knowsAbout": [
+        "Ingénierie des systèmes cognitifs",
+        "Architectures cognitives",
+        "Systèmes multi-agents",
+        "Déploiement local de LLM",
+        "Souveraineté des données"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.synchronia-labs.ai/#website",
+      "url": "https://www.synchronia-labs.ai/",
+      "name": "Synchronia Labs",
+      "publisher": { "@id": "https://www.synchronia-labs.ai/#organization" },
+      "inLanguage": ["fr-DZ", "en-US"]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.synchronia-labs.ai/#manifeste",
+      "isPartOf": { "@id": "https://www.synchronia-labs.ai/#website" },
+      "headline": "L'IA n'est pas un logiciel. C'est une architecture.",
+      "author": { "@id": "https://www.synchronia-labs.ai/#nabil-aknine" },
+      "publisher": { "@id": "https://www.synchronia-labs.ai/#organization" },
+      "description": "Manifeste fondateur sur l'ingénierie des systèmes cognitifs souverains : orchestration multi-modèles, mémoire persistante, traçabilité et explicabilité, exécution locale."
+    }
+  ]
+}
+</script>
+<!-- Profils sociaux : à ajouter dans "sameAs" de l'Organization et de la Person UNIQUEMENT une fois créés et en ligne :
+  Organization.sameAs: ["https://www.linkedin.com/company/synchronia-labs", "https://github.com/…"]
+  Person.sameAs:       ["https://www.linkedin.com/in/…"]
+-->
+<!-- RC / NIF / NIS : à renseigner après immatriculation CNRC (voir aussi Mentions légales) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0B0F; --bg-el:#12141C; --bg-el2:#171A24;
+    --accent:#3DDC97; --accent2:#22D3EE;
+    --prep:#E9A94B; --target:#8590A6;
+    --accent-dim:rgba(61,220,151,.12); --accent-line:rgba(61,220,151,.25);
+    --text:#E8EAED; --text2:#8B93A7; --faint:#545C6E;
+    --line:#21242F;
+    --fd:'Space Grotesk',sans-serif; --fb:'Inter',sans-serif; --fm:'JetBrains Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.6;-webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent);color:var(--bg)}
+  .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  .orb{position:fixed;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:0;opacity:.30}
+  .orb-1{width:480px;height:480px;background:var(--accent);top:-180px;left:-120px;animation:d1 18s ease-in-out infinite}
+  .orb-2{width:420px;height:420px;background:var(--accent2);top:240px;right:-160px;animation:d2 22s ease-in-out infinite}
+  .orb-3{width:360px;height:360px;background:var(--accent);bottom:180px;left:32%;opacity:.14;animation:d1 26s ease-in-out infinite}
+  @keyframes d1{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,80px)}}
+  @keyframes d2{0%,100%{transform:translate(0,0)}50%{transform:translate(-50px,-60px)}}
+  nav.top,.hero,.founder,.spaces,.flagship,.contact,footer{position:relative;z-index:1}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+  @media(max-width:640px){.wrap{padding:0 22px}}
+  .eyebrow{font-family:var(--fm);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+
+  nav.top{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(10,11,15,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .logo{display:flex;align-items:center;gap:11px;font-family:var(--fd);font-weight:700;font-size:16px;letter-spacing:-.02em}
+  .logo-img{height:42px;width:auto;display:block}
+  .logo-fallback{font-family:var(--fd);font-weight:700;font-size:15px;letter-spacing:-.01em}
+  .logo-fallback b{color:var(--accent);font-weight:600}
+  .nav-links{display:flex;gap:24px;align-items:center;font-family:var(--fm);font-size:12.5px}
+  .nav-links a{color:var(--text2);transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .nav-cta{border:1px solid var(--accent-line);color:var(--accent);border-radius:3px;padding:9px 16px;transition:background .2s}
+  .nav-cta:hover{background:var(--accent-dim)}
+  @media(max-width:900px){.nav-links a:not(.nav-cta){display:none}}
+
+  .hero{padding:106px 0 60px}
+  .hero .eyebrow{display:block;margin-bottom:26px}
+  .hero h1{font-family:var(--fd);font-weight:600;font-size:clamp(34px,5.4vw,58px);line-height:1.06;letter-spacing:-.025em;max-width:20ch}
+  .hero p.lead{margin-top:26px;max-width:64ch;color:var(--text2);font-size:clamp(15px,1.6vw,17px)}
+  .cta-row{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-family:var(--fm);font-size:13px;padding:13px 22px;border-radius:3px;transition:.2s;display:inline-flex;align-items:center;gap:9px}
+  .btn-p{background:var(--accent);color:var(--bg);font-weight:500}
+  .btn-p:hover{filter:brightness(1.08)}
+  .btn-s{border:1px solid var(--line);color:var(--text)}
+  .btn-s:hover{border-color:var(--accent-line);color:var(--accent)}
+
+  .founder{padding:24px 0 12px}
+  .founder .card{display:flex;gap:22px;align-items:center;border:1px solid var(--line);border-radius:8px;background:var(--bg-el);padding:22px 26px}
+  .avatar{width:54px;height:54px;flex:none;border-radius:8px;border:1px solid var(--accent-line);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:700;color:var(--accent);background:var(--accent-dim);font-size:17px}
+  .founder .who{font-family:var(--fd);font-weight:600;font-size:16px}
+  .founder .role{font-family:var(--fm);font-size:11.5px;color:var(--accent);letter-spacing:.06em;margin:3px 0 6px}
+  .founder .bio{color:var(--text2);font-size:14px;max-width:72ch}
+
+  /* SPACES */
+  .spaces{padding:64px 0 20px}
+  .spaces .eyebrow{display:block;margin-bottom:14px}
+  .spaces h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em}
+  .spaces .sub{margin-top:12px;color:var(--text2);max-width:66ch;font-size:15px}
+  .statekey{margin-top:20px;display:flex;gap:24px;flex-wrap:wrap;font-family:var(--fm);font-size:11.5px;color:var(--text2)}
+  .statekey span{display:inline-flex;align-items:center;gap:9px}
+  .kk{width:9px;height:9px;border-radius:50%;flex:none}
+  .kk-on{background:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
+  .kk-off{background:transparent;border:1.6px solid var(--target)}
+
+  .grid{margin-top:30px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .space{position:relative;border:1px solid var(--line);border-radius:10px;background:var(--bg-el);padding:24px 22px;transition:border-color .2s,transform .2s;display:flex;flex-direction:column;min-height:186px}
+  .space:hover{border-color:var(--accent-line);transform:translateY(-3px)}
+  .space .no{font-family:var(--fm);font-size:11px;color:var(--faint);letter-spacing:.14em}
+  .space h3{font-family:var(--fd);font-weight:600;font-size:18px;margin:12px 0 8px;letter-spacing:-.01em}
+  .space p{color:var(--text2);font-size:13.5px;line-height:1.5;flex:1}
+  .state{margin-top:16px;font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px}
+  .state .d{width:8px;height:8px;border-radius:50%}
+  .on .state{color:var(--accent)} .on .state .d{background:var(--accent);box-shadow:0 0 0 2.5px var(--accent-dim)}
+  .off .state{color:var(--target)} .off .state .d{background:transparent;border:1.5px solid var(--target)}
+  .space.flag{border-color:var(--accent-line);background:linear-gradient(180deg,var(--accent-dim),var(--bg-el) 60%)}
+
+  /* FLAGSHIP */
+  .flagship{padding:60px 0 20px}
+  .fbox{border:1px solid var(--accent-line);border-radius:12px;background:var(--bg-el);padding:34px 32px;position:relative;overflow:hidden}
+  .fbox .eyebrow{display:block;margin-bottom:12px}
+  .fbox h2{font-family:var(--fd);font-weight:600;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em}
+  .fbox p{margin-top:12px;color:var(--text2);max-width:60ch;font-size:14.5px}
+  .ministack{margin-top:24px;display:flex;flex-direction:column;gap:6px}
+  .mlayer{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:5px;background:var(--bg-el2);padding:11px 16px;font-family:var(--fm);font-size:12.5px}
+  .mlayer .n{color:var(--faint);width:26px}
+  .mlayer .nm{color:var(--text);flex:1}
+  .mlayer .st{width:8px;height:8px;border-radius:50%}
+  .st-live{background:var(--accent);box-shadow:0 0 0 2.5px var(--accent-dim)}
+  .st-mix{background:var(--prep);box-shadow:0 0 0 2.5px rgba(233,169,75,.13)}
+  .st-tg{background:transparent;border:1.5px solid var(--target)}
+  .fbox .more{margin-top:24px;display:inline-flex}
+
+  .contact{padding:78px 0 60px;border-top:1px solid var(--line);margin-top:40px}
+  .contact h2{font-family:var(--fd);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.02em;max-width:16ch}
+  .contact p{margin-top:16px;color:var(--text2);max-width:50ch}
+  .links{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+  .cform{margin-top:30px;max-width:640px}
+  .cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:560px){.cform .row{grid-template-columns:1fr}}
+  .field{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+  .field label{font-family:var(--fm);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text2)}
+  .field input,.field textarea{background:var(--bg-el2);border:1px solid var(--line);border-radius:5px;color:var(--text);font-family:var(--fb);font-size:14px;padding:12px 14px;transition:border-color .2s;width:100%}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent-line)}
+  .field textarea{resize:vertical;min-height:120px}
+  .cform .send{margin-top:6px}
+  .cform .alt{margin-top:16px;font-size:13px;color:var(--text2)}
+  .cform .alt a{color:var(--accent)}
+
+  .why{padding:60px 0 20px}
+  .why .eyebrow{display:block;margin-bottom:14px}
+  .why h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em;margin-bottom:28px}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:760px){.why-grid{grid-template-columns:1fr}}
+  .why-item{border:1px solid var(--line);border-radius:8px;background:var(--bg-el);padding:20px 22px;display:flex;gap:14px;align-items:flex-start;transition:border-color .2s}
+  .why-item:hover{border-color:var(--accent-line)}
+  .why-item .chk{flex:none;width:22px;height:22px;border-radius:5px;background:var(--accent-dim);border:1px solid var(--accent-line);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12px;margin-top:2px}
+  .why-item h3{font-family:var(--fd);font-weight:600;font-size:15.5px;margin-bottom:4px}
+  .why-item p{color:var(--text2);font-size:13px;line-height:1.5}
+
+  .proof{padding:60px 0 20px}
+  .proof .eyebrow{display:block;margin-bottom:14px}
+  .proof h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em}
+  .proof .sub{margin-top:12px;color:var(--text2);max-width:64ch;font-size:15px;margin-bottom:28px}
+  .proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media(max-width:760px){.proof-grid{grid-template-columns:1fr}}
+  .pcard{border:1px solid var(--line);border-radius:10px;background:var(--bg-el);padding:24px;transition:border-color .2s,transform .2s}
+  .pcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
+  .pcard .ph{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+  .pcard .pn{font-family:var(--fd);font-weight:600;font-size:17px}
+  .pcard .pb{font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:7px;color:var(--accent);white-space:nowrap}
+  .pcard .pb .d{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 2.5px var(--accent-dim)}
+  .pcard .pb.anon{color:var(--text2)} .pcard .pb.anon .d{background:var(--text2);box-shadow:0 0 0 2.5px rgba(133,144,166,.15)}
+  .pcard p{color:var(--text2);font-size:13.5px;line-height:1.55}
+  .pcard .metric{color:var(--accent);font-weight:600}
+
+  .vision{padding:62px 0}
+  .vision .wrap{max-width:920px}
+  .vision .eyebrow{display:block;margin-bottom:18px}
+  .vision p{font-family:var(--fd);font-weight:500;font-size:clamp(20px,2.7vw,28px);line-height:1.42;letter-spacing:-.01em;color:var(--text)}
+  .vision p .grad{font-weight:600}
+
+  .method{padding:58px 0 20px}
+  .method .eyebrow{display:block;margin-bottom:14px}
+  .method h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em;margin-bottom:28px}
+  .steps{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+  @media(max-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:520px){.steps{grid-template-columns:repeat(2,1fr)}}
+  .step{padding:18px 12px;border:1px solid var(--line);background:var(--bg-el);border-radius:8px;min-height:104px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s}
+  .step:hover{border-color:var(--accent-line)}
+  .step .sn{font-family:var(--fm);font-size:11px;color:var(--accent);letter-spacing:.12em}
+  .step .st{font-family:var(--fd);font-weight:500;font-size:13px;line-height:1.3}
+
+  .sectors{padding:52px 0 20px}
+  .sectors .eyebrow{display:block;margin-bottom:14px}
+  .sectors h2{font-family:var(--fd);font-weight:600;font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;margin-bottom:22px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chips .c{font-family:var(--fm);font-size:12.5px;color:var(--text2);border:1px solid var(--line);border-radius:20px;padding:9px 16px;background:var(--bg-el);transition:border-color .2s,color .2s}
+  .chips .c:hover{border-color:var(--accent-line);color:var(--text)}
+
+  .formstatus{margin-top:14px;font-size:13.5px;color:var(--text2)}
+  .formstatus.ok{color:var(--accent)}
+
+  .brain{padding:58px 0 20px}
+  .bbox{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;border:1px solid var(--accent-line);border-radius:12px;background:linear-gradient(180deg,var(--accent-dim),var(--bg-el) 55%);padding:32px}
+  @media(max-width:820px){.bbox{grid-template-columns:1fr}}
+  .btext .eyebrow{display:block;margin-bottom:14px}
+  .btext h2{font-family:var(--fd);font-weight:600;font-size:clamp(21px,2.9vw,28px);letter-spacing:-.02em}
+  .btext p{margin-top:12px;color:var(--text2);font-size:14.5px;line-height:1.6}
+  .bstack{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+  .bstack span{font-family:var(--fm);font-size:11px;color:var(--faint);border:1px solid var(--line);border-radius:3px;padding:5px 10px}
+  .bstate{margin-top:18px;display:inline-flex;align-items:center;gap:9px;font-family:var(--fm);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--prep)}
+  .bstate i{width:9px;height:9px;border-radius:50%;background:transparent;border:1.6px solid var(--prep)}
+  .bvisual{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg-el2);min-height:210px;display:flex;align-items:center;justify-content:center}
+  .bvisual img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1}
+  .bvisual .bph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--fm);font-size:11px;color:var(--faint);text-align:center;padding:24px;line-height:1.7}
+
+  .products{padding:60px 0 10px}
+  .products .eyebrow{display:block;margin-bottom:14px}
+  .products>.wrap>h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em;margin-bottom:8px}
+  .products>.wrap>.psub{color:var(--text2);font-size:15px;max-width:60ch}
+  .product{display:grid;grid-template-columns:.92fr 1.08fr;gap:26px;align-items:center;border:1px solid var(--line);border-radius:12px;background:var(--bg-el);padding:28px;margin-top:20px}
+  @media(max-width:820px){.product{grid-template-columns:1fr}}
+  .product.rev .p-visual{order:2}
+  @media(max-width:820px){.product.rev .p-visual{order:0}}
+  .p-visual{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg-el2);min-height:220px;display:flex;align-items:center;justify-content:center}
+  .p-visual img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1}
+  .p-visual .p-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--fm);font-size:11px;color:var(--faint);text-align:center;padding:24px;line-height:1.7}
+  .p-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+  .p-name{font-family:var(--fd);font-weight:600;font-size:22px;letter-spacing:-.01em}
+  .pbadge{font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+  .pbadge .d{width:8px;height:8px;border-radius:50%}
+  .pbadge.live{color:var(--accent)} .pbadge.live .d{background:var(--accent);box-shadow:0 0 0 2.5px var(--accent-dim)}
+  .pbadge.prep{color:var(--prep)} .pbadge.prep .d{background:var(--prep);box-shadow:0 0 0 2.5px rgba(233,169,75,.13)}
+  .pbadge.anon{color:var(--text2)} .pbadge.anon .d{background:var(--text2);box-shadow:0 0 0 2.5px rgba(133,144,166,.15)}
+  .p-lead{color:var(--text2);font-size:14.5px;margin-bottom:16px}
+  .p-feats{list-style:none;display:grid;gap:8px}
+  .p-feats li{position:relative;padding-left:22px;color:var(--text);font-size:13.5px;line-height:1.45}
+  .p-feats li::before{content:'';position:absolute;left:0;top:6px;width:9px;height:9px;border-radius:2px;background:var(--accent-dim);border:1px solid var(--accent-line)}
+  .p-principle{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+  .p-principle span{font-family:var(--fm);font-size:11px;color:var(--accent);border:1px solid var(--accent-line);border-radius:20px;padding:5px 12px;background:var(--accent-dim)}
+
+  .tagline{padding:58px 0;text-align:center}
+  .tagline p{font-family:var(--fd);font-weight:600;font-size:clamp(22px,3.6vw,36px);letter-spacing:-.02em;max-width:22ch;margin:0 auto;line-height:1.28}
+  .organism{padding:60px 0 20px}
+  .organism .eyebrow{display:block;margin-bottom:14px}
+  .organism h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em}
+  .organism .lead{margin-top:12px;color:var(--text2);max-width:62ch;font-size:15px}
+  .netwrap{margin-top:26px;border:1px solid var(--line);border-radius:14px;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(61,220,151,.06),transparent 70%),var(--bg-el);padding:16px}
+  .netwrap svg{width:100%;height:auto;display:block}
+  .orgkey{margin-top:14px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap;font-family:var(--fm);font-size:11.5px;color:var(--muted)}
+  .orgkey span{display:inline-flex;align-items:center;gap:8px}
+  .orgkey i{width:9px;height:9px;border-radius:50%;display:inline-block}
+  @keyframes flux{to{stroke-dashoffset:-36}}
+  @keyframes halop{0%,100%{opacity:.12}50%{opacity:.27}}
+  .flux{stroke-dasharray:4 9;animation:flux 1.5s linear infinite}
+  .nhalo{animation:halop 3.2s ease-in-out infinite}
+  @media(prefers-reduced-motion:reduce){.flux,.nhalo{animation:none}}
+
+  .offers{padding:56px 0 14px}
+  .offers .eyebrow{display:block;margin-bottom:14px}
+  .offers h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em;margin-bottom:26px}
+  .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:760px){.offer-grid{grid-template-columns:1fr}}
+  .offer{position:relative;border:1px solid var(--line);border-radius:10px;background:var(--bg-el);padding:28px 24px;transition:border-color .2s,transform .2s}
+  .offer:hover{border-color:var(--accent-line);transform:translateY(-3px)}
+  .offer .on{font-family:var(--fm);font-size:26px;font-weight:500;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .offer h3{font-family:var(--fd);font-weight:600;font-size:20px;margin:12px 0 8px;letter-spacing:-.01em}
+  .offer p{color:var(--text2);font-size:14px;line-height:1.55}
+  .offer .arrow{position:absolute;top:50%;right:-14px;transform:translateY(-50%);font-size:18px;color:var(--faint);z-index:2}
+  .offer-stack{display:flex;flex-direction:column;gap:18px}
+  .offer-poster{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.45)}
+  .sr-only-h{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .space{cursor:pointer}
+  .space .more{margin-top:10px;font-family:var(--fm);font-size:11px;color:var(--accent);opacity:0;transition:opacity .2s}
+  .space:hover .more{opacity:1}
+  .ovl{position:fixed;inset:0;z-index:200;background:rgba(6,7,10,.78);backdrop-filter:blur(8px);display:none;overflow-y:auto;padding:5vh 18px 8vh}
+  .ovl.open{display:block}
+  .panel{max-width:860px;margin:0 auto;background:var(--bg-el);border:1px solid var(--line);border-radius:14px;padding:38px 40px 44px;position:relative;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+  @media(max-width:640px){.panel{padding:28px 20px 34px}}
+  .panel .close{position:absolute;top:16px;right:16px;background:var(--bg-el2);border:1px solid var(--line);color:var(--text2);border-radius:6px;font-family:var(--fm);font-size:12px;padding:8px 13px;cursor:pointer}
+  .panel .close:hover{border-color:var(--accent-line);color:var(--accent)}
+  .panel .pk{font-family:var(--fm);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:12px}
+  .panel h2{font-family:var(--fd);font-weight:600;font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;margin-bottom:8px}
+  .panel .pstate{font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;margin-bottom:18px}
+  .panel .pstate i{width:8px;height:8px;border-radius:50%}
+  .panel .pstate.on{color:var(--accent)} .panel .pstate.on i{background:var(--accent);box-shadow:0 0 0 2.5px var(--accent-dim)}
+  .panel .pstate.off{color:var(--prep)} .panel .pstate.off i{background:transparent;border:1.5px solid var(--prep)}
+  .panel .intro{color:var(--text2);font-size:15px;margin-bottom:22px;max-width:64ch}
+  .panel h3{font-family:var(--fd);font-weight:600;font-size:16px;margin:24px 0 10px;color:var(--text)}
+  .panel p{color:var(--text2);font-size:14px;line-height:1.6;margin-bottom:10px}
+  .panel ul{list-style:none;margin:0 0 8px;display:grid;gap:8px}
+  .panel li{position:relative;padding-left:20px;color:var(--text);font-size:13.5px;line-height:1.5}
+  .panel li::before{content:'';position:absolute;left:0;top:6px;width:8px;height:8px;border-radius:2px;background:var(--accent-dim);border:1px solid var(--accent-line)}
+  .panel li b{color:var(--accent);font-weight:500}
+  .panel .cta{margin-top:26px;display:inline-flex}
+  body.noscroll{overflow:hidden}
+  #anahybrid-section{padding:66px 0 20px}
+  #anahybrid-section .research{padding:0}
+  #anahybrid-section .rhero{margin-bottom:26px}
+  #anahybrid-section .poster{cursor:zoom-in}
+  .research{padding:0}
+  .rhero{position:relative;border:1px solid var(--accent-line);border-radius:16px;overflow:hidden;background:radial-gradient(ellipse 70% 90% at 70% 30%,rgba(34,211,238,.10),transparent 60%),linear-gradient(180deg,#0C1119,#0A0B0F);padding:40px 38px 34px;margin-bottom:26px}
+  @media(max-width:640px){.rhero{padding:30px 22px}}
+  .rhero .poster{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line);margin-bottom:26px}
+  .rhero .rk{font-family:var(--fm);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+  .rhero h1{font-family:var(--fd);font-weight:700;font-size:clamp(30px,5vw,50px);letter-spacing:-.03em;line-height:1.02;margin:12px 0 6px}
+  .rhero h1 .grad{font-weight:700}
+  .rhero .tag{color:var(--muted);font-family:var(--fm);font-size:13px;letter-spacing:.02em;margin-bottom:16px}
+  .rhero .pstate{font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;color:var(--accent)}
+  .rhero .pstate i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 2.5px var(--accent-dim)}
+  .rlead{color:var(--text2);font-size:16px;line-height:1.7;max-width:70ch;margin-bottom:12px}
+  .rlead b{color:var(--text)}
+  .rgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 4px}
+  @media(max-width:720px){.rgrid{grid-template-columns:1fr}}
+  .rcard{border:1px solid var(--line);border-radius:12px;background:var(--bg-el);padding:24px}
+  .rcard .rn{font-family:var(--fm);font-size:11px;letter-spacing:.12em;color:var(--faint)}
+  .rcard h3{font-family:var(--fd);font-weight:600;font-size:18px;margin:8px 0 10px;letter-spacing:-.01em}
+  .rcard p,.rcard li{color:var(--text2);font-size:13.5px;line-height:1.6}
+  .rcard ul{list-style:none;display:grid;gap:8px;margin-top:6px}
+  .rcard li{position:relative;padding-left:18px}
+  .rcard li::before{content:'';position:absolute;left:0;top:6px;width:8px;height:8px;border-radius:2px;background:var(--accent-dim);border:1px solid var(--accent-line)}
+  .rlayers{margin:6px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .rlayer{display:grid;grid-template-columns:150px 1fr;border-top:1px solid var(--line-soft);align-items:center}
+  .rlayer:first-child{border-top:none}
+  .rlayer .ln{padding:16px 18px;font-family:var(--fm);font-size:12px;letter-spacing:.06em;color:var(--accent);background:rgba(61,220,151,.04)}
+  .rlayer .ld{padding:16px 18px;color:var(--text2);font-size:13.5px;line-height:1.55}
+  .rlayer .ld b{color:var(--text)}
+  @media(max-width:560px){.rlayer{grid-template-columns:1fr}.rlayer .ln{border-bottom:1px solid var(--line-soft)}}
+  .rblock{margin-top:22px}
+  .rblock h3{font-family:var(--fd);font-weight:600;font-size:17px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .rblock.proven h3{color:var(--accent)} .rblock.proven h3::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-dim)}
+  .rblock.open h3{color:var(--prep)} .rblock.open h3::before{content:'';width:9px;height:9px;border-radius:50%;background:transparent;border:1.6px solid var(--prep)}
+  .rblock ul{list-style:none;display:grid;gap:9px}
+  .rblock li{position:relative;padding-left:20px;color:var(--text2);font-size:14px;line-height:1.6}
+  .rblock.proven li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-size:12px}
+  .rblock.open li::before{content:'?';position:absolute;left:0;color:var(--prep);font-family:var(--fm);font-size:12px}
+  .rcall{margin-top:26px;border:1px solid var(--accent-line);border-radius:12px;background:linear-gradient(180deg,var(--accent-dim),var(--bg-el) 60%);padding:28px}
+  .rcall h3{font-family:var(--fd);font-weight:600;font-size:19px;margin-bottom:10px}
+  .rcall p{color:var(--text2);font-size:14.5px;line-height:1.65;max-width:64ch;margin-bottom:8px}
+  .rcall .who{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .rcall .who span{font-family:var(--fm);font-size:11px;color:var(--accent);border:1px solid var(--accent-line);border-radius:20px;padding:5px 12px;background:var(--accent-dim)}
+  .rcall .cta{margin-top:20px;display:inline-flex}
+
+  footer{border-top:1px solid var(--line);padding:40px 0}
+  .manifesto{padding:70px 0 30px;position:relative}
+  .manifesto .wrap{max-width:820px}
+  .manifesto .eyebrow{display:block;margin-bottom:18px}
+  .manifesto h2{font-family:var(--fd);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.025em;line-height:1.1;margin-bottom:10px}
+  .manifesto .dek{color:var(--muted);font-size:15px;font-family:var(--fm);letter-spacing:.02em;margin-bottom:38px}
+  .mano{counter-reset:th}
+  .thesis{border-top:1px solid var(--line);padding:26px 0 10px}
+  .thesis .n{counter-increment:th;font-family:var(--fm);font-size:12px;letter-spacing:.14em;color:var(--accent)}
+  .thesis .n::before{content:"§ " counter(th,decimal-leading-zero)}
+  .thesis h3{font-family:var(--fd);font-weight:600;font-size:clamp(18px,2.4vw,23px);letter-spacing:-.01em;margin:8px 0 12px;max-width:26ch}
+  .thesis p{color:var(--text2);font-size:15px;line-height:1.75;margin-bottom:12px}
+  .thesis p b{color:var(--text)}
+  .thesis .pull{font-family:var(--fd);font-weight:500;color:var(--text);font-size:16px;border-left:2px solid var(--accent);padding-left:16px;margin:6px 0 4px}
+  .limits{margin-top:44px;border:1px solid var(--line);border-radius:12px;background:rgba(233,169,75,.04);padding:26px 28px}
+  .limits h3{font-family:var(--fd);font-weight:600;font-size:17px;color:var(--prep);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .limits h3::before{content:'';width:9px;height:9px;border-radius:50%;background:transparent;border:1.6px solid var(--prep)}
+  .limits ul{list-style:none;display:grid;gap:10px}
+  .limits li{position:relative;padding-left:20px;color:var(--text2);font-size:14px;line-height:1.6}
+  .limits li::before{content:'—';position:absolute;left:0;color:var(--prep)}
+  .manifesto .close-sig{margin-top:40px;text-align:center;font-family:var(--fd);font-weight:600;font-size:clamp(18px,2.6vw,24px);letter-spacing:-.01em;line-height:1.35;max-width:30ch;margin-left:auto;margin-right:auto}
+  .manifesto .close-sig .grad{font-weight:600}
+
+  footer{border-top:1px solid var(--line);padding:40px 0}
+  .diff{padding:64px 0 20px}
+  .diff .eyebrow{display:block;margin-bottom:16px}
+  .diff h2{font-family:var(--fd);font-weight:600;font-size:clamp(24px,3.4vw,34px);letter-spacing:-.02em;max-width:20ch}
+  .diff h2 .grad{font-weight:600}
+  .diff .body{margin-top:18px;max-width:64ch;color:var(--text2);font-size:15px;line-height:1.7}
+  .diff .body b{color:var(--text)}
+  .difftable{margin-top:30px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .difftable .r{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-soft)}
+  .difftable .r:first-child{border-top:none}
+  .difftable .c{padding:14px 20px;font-size:14px;display:flex;align-items:center;gap:10px}
+  .difftable .l{color:var(--text2);background:rgba(255,255,255,.012)}
+  .difftable .rr{color:var(--text);font-family:var(--fb);font-weight:500}
+  .difftable .rr::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-dim);flex:none}
+  .difftable .head .c{font-family:var(--fm);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding:12px 20px}
+  .difftable .head .rr{color:var(--accent)}
+  .difftable .head .rr::before{display:none}
+  .diff .sign{margin-top:26px;font-family:var(--fd);font-weight:600;font-size:clamp(17px,2.2vw,22px);letter-spacing:-.01em;line-height:1.35;max-width:26ch}
+  @media(max-width:600px){.difftable .c{padding:12px 14px;font-size:13px}}
+  /* fonds des huit domaines */
+  .spaces{position:relative;isolation:isolate;border-radius:0}
+  .spaces::before{content:'';position:absolute;inset:0;z-index:-2;
+    background:url("assets/bg-network.jpg") center/cover no-repeat}
+  .spaces::after{content:'';position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(180deg,rgba(10,11,15,.94),rgba(10,11,15,.82) 40%,rgba(10,11,15,.94))}
+  .spaces .space{background:rgba(18,20,28,.88);backdrop-filter:blur(3px)}
+  .ovl.open{background:rgba(6,7,10,.62)}
+  .ovl::before{content:'';position:fixed;inset:0;z-index:-1;
+    background:url("assets/bg-command.jpg") center/cover no-repeat;opacity:.5}
+  .panel{background:rgba(16,18,26,.94);backdrop-filter:blur(10px)}
+  @media(max-width:760px){.offer .arrow{display:none}}
+
+  .offer .diag{margin-top:16px;border:1px solid var(--line);border-radius:8px;background:var(--bg-el2);padding:10px}
+  .offer .diag svg{width:100%;height:auto;display:block}
+  .showcase{padding:60px 0 20px}
+  .showcase .eyebrow{display:block;margin-bottom:14px}
+  .showcase h2{font-family:var(--fd);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:-.02em}
+  .showcase .lead{margin-top:12px;color:var(--text2);max-width:62ch;font-size:15px}
+  .showbox{margin-top:24px;border:1px solid var(--line);border-radius:14px;background:radial-gradient(ellipse 55% 55% at 50% 42%,rgba(34,211,238,.05),transparent 70%),var(--bg-el);padding:22px}
+  .showbox svg{width:100%;height:auto;display:block}
+  .sig{margin-top:20px;text-align:center;font-family:var(--fm);font-size:12.5px;letter-spacing:.04em;color:var(--muted);font-style:italic}
+  .sig b{color:var(--accent);font-weight:500}
+
+  footer{border-top:1px solid var(--line);padding:40px 0}
+  .fgrid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px}
+  .fcol h4{font-family:var(--fm);font-size:11px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase;margin-bottom:12px}
+  .fcol a,.fcol span{display:block;color:var(--text2);font-size:13.5px;margin-bottom:6px}
+  .fcol a:hover{color:var(--accent)}
+  .fbottom{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--fm);font-size:11px;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+  @media(prefers-reduced-motion:reduce){.orb{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+
+<nav class="top">
+  <a href="#top" class="logo"><img class="logo-img" src="assets/logo.jpg" alt="Synchronia Labs — Consulting IA" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span class="logo-fallback" style="display:none">Synchronia&nbsp;Labs&nbsp;·&nbsp;<b>Consulting&nbsp;IA</b></span></a>
+  <div class="nav-links">
+    <a href="#produits">Solutions</a>
+    <a href="#anahybrid-section">Recherche</a>
+    <a href="#espaces">Espaces</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta">Parler de votre projet</a>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero"><div class="wrap">
+    <span class="eyebrow">Institut d'ingénierie des systèmes intelligents · Alger</span>
+    <h1>L'intelligence artificielle n'est pas un logiciel. C'est une <span class="grad">architecture</span>.</h1>
+    <p class="lead">Une doctrine, une recherche, des produits, un écosystème et une vision à long terme. Synchronia Labs conçoit, déploie et exploite des systèmes d'IA souverains pour les entreprises et institutions algériennes — et, à terme, à l'international.</p>
+    <p class="lead" style="margin-top:14px;color:var(--text)"><b>Concrètement :</b> nous concevons, construisons et faisons évoluer vos systèmes intelligents — ERP, vision, agents — déployés chez vous, opérationnels dès aujourd'hui.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-p">Parler de votre projet →</a>
+      <a href="#architecture" class="btn btn-s">Découvrir notre approche</a>
+    </div>
+  </div></section>
+
+  <section class="founder"><div class="wrap">
+    <div class="card">
+      <div class="avatar">NA</div>
+      <div>
+        <div class="who">Nabil Aknine</div>
+        <div class="role">Fondateur &amp; Architecte Cognitif en Chef</div>
+        <div class="bio">Plus de 25 ans d'expérience dans les infrastructures critiques, les systèmes d'information et l'architecture technique. Fondateur de Synchronia Labs et concepteur de la doctrine d'Architecture Cognitive.</div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="diff" id="difference"><div class="wrap">
+    <span class="eyebrow">Notre différence</span>
+    <h2>L'IA n'est pas un produit. C'est une <span class="grad">infrastructure</span>.</h2>
+    <p class="body">La plupart des solutions IA répondent à un besoin précis : un chatbot, un OCR, un assistant, une automatisation. <b>Synchronia Labs adopte une approche différente.</b> Nous concevons des systèmes cognitifs capables de percevoir, comprendre, raisonner, décider, agir et apprendre dans leur environnement — où chaque module (vision, agents, mémoire, orchestration, et demain robotique, IoT, Digital Twin) fonctionne comme l'organe d'un même organisme intelligent. Nous ne développons pas une application : nous construisons <b>l'infrastructure qui permet à vos applications intelligentes d'exister.</b></p>
+    <div class="difftable">
+      <div class="r head"><div class="c l">Approche traditionnelle</div><div class="c rr">Synchronia Labs</div></div>
+      <div class="r"><div class="c l">Une application IA</div><div class="c rr">Une plateforme cognitive</div></div>
+      <div class="r"><div class="c l">Un chatbot</div><div class="c rr">Un orchestrateur d'agents IA</div></div>
+      <div class="r"><div class="c l">Une API</div><div class="c rr">Une architecture souveraine</div></div>
+      <div class="r"><div class="c l">Une automatisation</div><div class="c rr">Un système décisionnel</div></div>
+      <div class="r"><div class="c l">Un logiciel</div><div class="c rr">Un écosystème intelligent</div></div>
+      <div class="r"><div class="c l">Une IA isolée</div><div class="c rr">Un réseau de systèmes intelligents</div></div>
+    </div>
+    <p class="sign">Nous ne développons pas des applications d'IA. <span class="grad">Nous concevons les systèmes cognitifs qui les rendent possibles.</span></p>
+  </div></section>
+
+  <section class="manifesto" id="doctrine"><div class="wrap">
+    <span class="eyebrow">Doctrine · manifeste fondateur</span>
+    <h2>L'ingénierie des systèmes cognitifs.</h2>
+    <p class="dek">Position de recherche appliquée — Synchronia Labs, Alger.</p>
+
+    <div class="mano">
+      <div class="thesis">
+        <span class="n"></span>
+        <h3>Le problème n'est pas l'intelligence. C'est l'intégration.</h3>
+        <p>La dernière décennie a produit des modèles remarquables — mais isolés. Chacun perçoit, ou raisonne, ou parle, ou décide. Aucun ne <b>vit</b> dans un environnement, avec une mémoire qui dure et des actes qui engagent. L'obstacle réel des organisations n'est plus la performance d'un modèle : c'est l'absence d'une <b>architecture</b> qui fasse tenir ensemble perception, raisonnement, mémoire, décision et action.</p>
+        <p class="pull">Un modèle est une pièce. Un système est un organisme.</p>
+      </div>
+
+      <div class="thesis">
+        <span class="n"></span>
+        <h3>Nous étudions le système, pas le modèle.</h3>
+        <p>Synchronia Labs ne cherche pas à entraîner un meilleur modèle fondation — c'est le terrain d'acteurs disposant de moyens de calcul considérables. Notre objet de recherche est l'<b>architecture cognitive</b> : comment orchestrer des modèles existants, leur adjoindre une mémoire persistante et un raisonnement structuré, et en faire des systèmes qui perçoivent, décident et apprennent de manière fiable, traçable et reproductible.</p>
+      </div>
+
+      <div class="thesis">
+        <span class="n"></span>
+        <h3>La souveraineté est une contrainte de conception, pas une option.</h3>
+        <p>Un système intelligent qui dépend d'une API distante n'est pas maîtrisé : il peut disparaître, changer de prix, ou exposer la donnée. Nous concevons pour l'<b>exécution locale</b> — sur le matériel de l'organisation, sa donnée dans ses murs. Cette contrainte, loin d'être un handicap, force une architecture plus rigoureuse et sert directement les institutions pour qui la souveraineté n'est pas négociable.</p>
+      </div>
+
+      <div class="thesis">
+        <span class="n"></span>
+        <h3>La preuve précède la promesse.</h3>
+        <p>Un système cognitif qui agit doit pouvoir être <b>vérifié</b> par celui qui le subit. Nos travaux imposent la traçabilité comme principe premier : agents signés, décisions rejouables, chaînes de preuve cryptographiques. Nous ne demandons pas la confiance — nous la rendons contrôlable. Et nous affichons l'état réel de chaque système : ce qui tourne, ce qui se prépare, ce qui reste une hypothèse.</p>
+        <p class="pull">Ce qui n'est pas vérifiable n'est pas un résultat.</p>
+      </div>
+
+      <div class="thesis">
+        <span class="n"></span>
+        <h3>Une architecture doit apprendre pour durer.</h3>
+        <p>Un système figé se périme. Nous concevons des architectures <b>évolutives</b> — qui observent leur environnement, mémorisent, ajustent et améliorent leurs décisions dans le temps. La mémoire n'est pas un cache : c'est l'organe qui transforme une exécution répétée en compétence acquise.</p>
+      </div>
+    </div>
+
+    <div class="limits">
+      <h3>Ce que nous ne prétendons pas</h3>
+      <ul>
+        <li>Nous ne construisons pas de modèle fondation concurrent — nous orchestrons l'existant.</li>
+        <li>Nos systèmes de perception et de robotique (vision, essaims, IoT, jumeau numérique) sont des <b>programmes de recherche en développement</b>, pas des produits finis. Nous le disons.</li>
+        <li>À ce jour, Synchronia Labs est porté par un architecte unique. C'est une force pour la cohérence, une limite pour l'échelle — et la raison de cet appel à collaboration.</li>
+        <li>Nos résultats déployés sont réels mais encore peu nombreux. Nous préférons quatre preuves vérifiables à quarante annonces.</li>
+      </ul>
+    </div>
+
+    <p class="close-sig">Nous ne créons pas une intelligence.<br><span class="grad">Nous concevons les systèmes qui la rendent habitable.</span></p>
+  </div></section>
+
+  <section class="offers" id="offres"><div class="wrap">
+    <span class="eyebrow">Trois offres, un cycle de vie</span>
+    <h2 class="sr-only-h">Ce que nous faisons pour vous.</h2>
+    <div class="offer-stack">
+      <img class="offer-poster" src="assets/offre-architecture.jpg" alt="01 Architecture — nous concevons votre système intelligent : diagnostic, urbanisation, plan directeur" loading="lazy">
+      <img class="offer-poster" src="assets/offre-construction.jpg" alt="02 Construction — nous le développons et le déployons : chez vous, souverain, opérationnel" loading="lazy">
+      <img class="offer-poster" src="assets/offre-evolution.jpg" alt="03 Évolution — nous le faisons apprendre : supervision, mémoire, amélioration continue" loading="lazy">
+    </div>
+  </div></section>
+
+  <section class="vision"><div class="wrap">
+    <span class="eyebrow">Pourquoi nous existons</span>
+    <p>Nous pensons que l'IA ne doit pas être une succession d'outils dépendants du cloud, mais une <span class="grad">infrastructure stratégique — maîtrisée, explicable et souveraine</span>. Synchronia Labs est né pour concevoir cette nouvelle génération de systèmes intelligents.</p>
+  </div></section>
+
+  <section class="method"><div class="wrap">
+    <span class="eyebrow">Notre démarche</span>
+    <h2>De bout en bout, une méthode.</h2>
+    <div class="steps">
+      <div class="step"><div class="sn">01</div><div class="st">Comprendre le métier</div></div>
+      <div class="step"><div class="sn">02</div><div class="st">Diagnostiquer le système</div></div>
+      <div class="step"><div class="sn">03</div><div class="st">Concevoir l'architecture cible</div></div>
+      <div class="step"><div class="sn">04</div><div class="st">Développer les composants</div></div>
+      <div class="step"><div class="sn">05</div><div class="st">Déployer</div></div>
+      <div class="step"><div class="sn">06</div><div class="st">Former</div></div>
+      <div class="step"><div class="sn">07</div><div class="st">Accompagner</div></div>
+    </div>
+  </div></section>
+
+  <section class="why"><div class="wrap">
+    <span class="eyebrow">Pourquoi Synchronia Labs</span>
+    <h2>Ce qui nous distingue.</h2>
+    <div class="why-grid">
+      <div class="why-item"><span class="chk">✓</span><div><h3>Doctrine propriétaire</h3><p>Une méthode d'architecture documentée, éprouvée sur des systèmes réels.</p></div></div>
+      <div class="why-item"><span class="chk">✓</span><div><h3>Architecture cognitive</h3><p>Mémoire, raisonnement, agents — pas un simple wrapper autour d'un modèle.</p></div></div>
+      <div class="why-item"><span class="chk">✓</span><div><h3>IA souveraine</h3><p>Déployable sur site, sur GPU local. Votre donnée ne quitte pas vos murs.</p></div></div>
+      <div class="why-item"><span class="chk">✓</span><div><h3>Développement sur mesure</h3><p>Des systèmes conçus pour votre contexte, pas un produit unique à adapter.</p></div></div>
+      <div class="why-item"><span class="chk">✓</span><div><h3>Recherche appliquée</h3><p>AnaHybrid, agents signés : la R&amp;D nourrit directement les produits.</p></div></div>
+      <div class="why-item"><span class="chk">✓</span><div><h3>Vision long terme</h3><p>Les applications évoluent. Les architectures durent.</p></div></div>
+    </div>
+  </div></section>
+
+  <section class="sectors"><div class="wrap">
+    <span class="eyebrow">Nous accompagnons</span>
+    <h2>Les secteurs que nous adressons.</h2>
+    <div class="chips">
+      <span class="c">Administrations</span>
+      <span class="c">Industrie</span>
+      <span class="c">Santé</span>
+      <span class="c">Énergie</span>
+      <span class="c">Transport</span>
+      <span class="c">PME stratégiques</span>
+    </div>
+  </div></section>
+
+  <section class="spaces" id="espaces"><div class="wrap">
+    <span class="eyebrow">Les huit espaces du cabinet</span>
+    <h2>Un cabinet, pas un catalogue.</h2>
+    <p class="sub">Huit domaines qui font une maison d'architecture complète. Comme partout ici, l'état est affiché sans fard : actif aujourd'hui, ou en construction.</p>
+    <div class="statekey">
+      <span><i class="kk kk-on"></i>Actif</span>
+      <span><i class="kk kk-off"></i>En construction</span>
+    </div>
+
+    <div class="grid" id="espacesGrid">
+      <div class="space flag on" data-esp="E1" role="button" tabindex="0">
+        <span class="no">E1</span><h3>Architecture</h3>
+        <p>Vision, doctrine, méthodologie. La pensée système qui structure tout le reste.</p>
+        <span class="state"><i class="d"></i>Actif · œuvre phare</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space on" data-esp="E2" role="button" tabindex="0">
+        <span class="no">E2</span><h3>Solutions SaaS</h3>
+        <p>Produits, déploiement, support. SynchroAgence en production, d'autres en préparation.</p>
+        <span class="state"><i class="d"></i>Actif</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space on" data-esp="E3" role="button" tabindex="0">
+        <span class="no">E3</span><h3>Développement</h3>
+        <p>Applications, IA, intégration sur mesure — conçus et construits en interne.</p>
+        <span class="state"><i class="d"></i>Actif</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space on" data-esp="E4" role="button" tabindex="0">
+        <span class="no">E4</span><h3>Audit &amp; Conseil</h3>
+        <p>Diagnostic, cybersécurité, urbanisation du système d'information.</p>
+        <span class="state"><i class="d"></i>Actif</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space off" data-esp="E5" role="button" tabindex="0">
+        <span class="no">E5</span><h3>Formation</h3>
+        <p>Parcours, ateliers, certifications autour de la pratique réelle de l'IA.</p>
+        <span class="state"><i class="d"></i>En construction</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space on" data-esp="E6" role="button" tabindex="0">
+        <span class="no">E6</span><h3>R&amp;D</h3>
+        <p>AnaCortex, AnaHybrid, agents cognitifs — la recherche qui alimente les produits.</p>
+        <span class="state"><i class="d"></i>Actif</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space off" data-esp="E7" role="button" tabindex="0">
+        <span class="no">E7</span><h3>Partenaires &amp; Écosystème</h3>
+        <p>Agences, freelances, universités, startups — le réseau qui étend la portée.</p>
+        <span class="state"><i class="d"></i>En construction</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+      <div class="space off" data-esp="E8" role="button" tabindex="0">
+        <span class="no">E8</span><h3>Ressources</h3>
+        <p>Documentation, blog technique, API, livres blancs.</p>
+        <span class="state"><i class="d"></i>En construction</span>
+        <span class="more">Ouvrir l'espace →</span>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="flagship" id="architecture"><div class="wrap">
+    <div class="fbox">
+      <span class="eyebrow">Espace Architecture · œuvre phare</span>
+      <h2>L'architecture de référence en sept couches.</h2>
+      <p>De l'infrastructure à l'expérience utilisateur, une seule logique. Chaque composant y porte son état de déploiement réel — le fil vert marque ce qui tourne réellement aujourd'hui.</p>
+      <div class="ministack">
+        <div class="mlayer"><span class="n">L1</span><span class="nm">Experience</span><span class="st st-tg"></span></div>
+        <div class="mlayer"><span class="n">L2</span><span class="nm">Business</span><span class="st st-mix"></span></div>
+        <div class="mlayer"><span class="n">L3</span><span class="nm">Application — SynchroAgence en production</span><span class="st st-live"></span></div>
+        <div class="mlayer"><span class="n">L4</span><span class="nm">Cognitive — agents signés, Memory Engine</span><span class="st st-live"></span></div>
+        <div class="mlayer"><span class="n">L5</span><span class="nm">Data — relationnel, vectoriel, graphes</span><span class="st st-live"></span></div>
+        <div class="mlayer"><span class="n">L6</span><span class="nm">Integration — API, webhooks</span><span class="st st-live"></span></div>
+        <div class="mlayer"><span class="n">L7</span><span class="nm">Infrastructure — VPS · PM2, Docker, CI/CD</span><span class="st st-live"></span></div>
+      </div>
+      <a href="#contact" class="btn btn-p more">Explorer l'architecture complète →</a>
+    </div>
+  </div></section>
+
+  <section class="showcase" id="showcase"><div class="wrap">
+    <span class="eyebrow">Architecture showcase</span>
+    <h2>Le pipeline cognitif.</h2>
+    <p class="lead">Pas de marketing ici — un plan. De la mission jusqu'à vos systèmes d'entreprise, voici comment une décision traverse une architecture Synchronia.</p>
+    <div class="showbox">
+      <svg viewBox="0 0 860 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline cognitif : mission, couche cognitive, exécution, systèmes d'entreprise">
+        <defs>
+          <linearGradient id="pl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3DDC97"/></linearGradient>
+          <linearGradient id="bx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2230"/><stop offset="1" stop-color="#12161F"/></linearGradient>
+          <filter id="gl2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <pattern id="gr" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#22D3EE" stroke-width=".4" opacity=".12"/></pattern>
+        </defs>
+        <rect x="0" y="0" width="860" height="470" fill="url(#gr)"/>
+        <!-- MISSION -->
+        <rect x="330" y="16" width="200" height="46" rx="8" fill="url(#bx)" stroke="url(#pl)" stroke-width="1.6" filter="url(#gl2)"/>
+        <circle cx="348" cy="39" r="3.5" fill="#22D3EE"/>
+        <text x="438" y="45" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="600" font-size="15" fill="#EAEEF5">MISSION</text>
+        <line class="flux" x1="430" y1="62" x2="430" y2="96" stroke="#22D3EE" stroke-width="1.6" filter="url(#gl2)"/>
+        <!-- COGNITIVE LAYER -->
+        <rect x="70" y="96" width="720" height="150" rx="12" fill="rgba(61,220,151,.03)" stroke="#3DDC97" stroke-width="1.2" opacity=".9"/>
+        <g stroke="#3DDC97" stroke-width="1.6"><path d="M70 116 v-8 a12 12 0 0 1 8-12" fill="none"/><path d="M790 116 v-8 a12 12 0 0 0 -8 -12" fill="none"/><path d="M70 226 v8 a12 12 0 0 0 8 12" fill="none"/><path d="M790 226 v8 a12 12 0 0 1 -8 12" fill="none"/></g>
+        <text x="92" y="122" font-family="'JetBrains Mono',monospace" font-size="11" letter-spacing="3" fill="#3DDC97">COUCHE COGNITIVE</text>
+        <g font-family="'Space Grotesk',sans-serif" font-weight="500" font-size="13" fill="#EAEEF5">
+          <rect x="96"  y="150" width="122" height="60" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><circle cx="157" cy="163" r="2.5" fill="#3DDC97"/><text x="157" y="190" text-anchor="middle">Raisonnement</text>
+          <rect x="238" y="150" width="122" height="60" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><circle cx="299" cy="163" r="2.5" fill="#3DDC97"/><text x="299" y="190" text-anchor="middle">Mémoire</text>
+          <rect x="380" y="150" width="122" height="60" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><circle cx="441" cy="163" r="2.5" fill="#3DDC97"/><text x="441" y="190" text-anchor="middle">Planification</text>
+          <rect x="522" y="150" width="122" height="60" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><circle cx="583" cy="163" r="2.5" fill="#3DDC97"/><text x="583" y="190" text-anchor="middle">Apprentissage</text>
+          <rect x="664" y="150" width="100" height="60" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><circle cx="714" cy="163" r="2.5" fill="#3DDC97"/><text x="714" y="190" text-anchor="middle">Vision</text>
+        </g>
+        <g stroke="#3DDC97" stroke-width="1.1" opacity=".7" filter="url(#gl2)">
+          <line class="flux" x1="218" y1="180" x2="238" y2="180"/><line class="flux" x1="360" y1="180" x2="380" y2="180"/>
+          <line class="flux" x1="502" y1="180" x2="522" y2="180"/><line class="flux" x1="644" y1="180" x2="664" y2="180"/>
+        </g>
+        <line class="flux" x1="430" y1="246" x2="430" y2="286" stroke="#22D3EE" stroke-width="1.6" filter="url(#gl2)"/>
+        <!-- EXECUTION -->
+        <rect x="250" y="286" width="360" height="54" rx="10" fill="url(#bx)" stroke="url(#pl)" stroke-width="1.5" filter="url(#gl2)"/>
+        <text x="430" y="310" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="600" font-size="14" fill="#EAEEF5">COUCHE D'EXÉCUTION</text>
+        <text x="430" y="328" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#3DDC97" opacity=".85">agents signés · traçables · rejouables</text>
+        <line class="flux" x1="430" y1="340" x2="430" y2="374" stroke="#22D3EE" stroke-width="1.6" filter="url(#gl2)"/>
+        <!-- ENTERPRISE -->
+        <g font-family="'Space Grotesk',sans-serif" font-weight="500" font-size="12.5" fill="#EAEEF5">
+          <rect x="150" y="374" width="160" height="48" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><text x="230" y="402" text-anchor="middle">ERP</text>
+          <rect x="350" y="374" width="160" height="48" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><text x="430" y="402" text-anchor="middle">Supervision</text>
+          <rect x="550" y="374" width="160" height="48" rx="8" fill="url(#bx)" stroke="#2A3547" filter="url(#gl2)"/><text x="630" y="402" text-anchor="middle">Terrain &amp; capteurs</text>
+        </g>
+        <g stroke="#3DDC97" stroke-width="1.2" filter="url(#gl2)">
+          <line class="flux" x1="330" y1="360" x2="240" y2="374"/><line class="flux" x1="530" y1="360" x2="620" y2="374"/>
+        </g>
+        <!-- feedback loop -->
+        <path class="flux" d="M710 398 H812 V180 H790" stroke="#E9A94B" stroke-width="1.4" fill="none" opacity=".9" filter="url(#gl2)"/>
+        <circle cx="812" cy="290" r="3" fill="#E9A94B" opacity=".8"/>
+        <text x="826" y="290" font-family="'JetBrains Mono',monospace" font-size="9" fill="#E9A94B" transform="rotate(90 826 290)">RETOUR D'APPRENTISSAGE</text>
+        <text x="430" y="452" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" letter-spacing="2" fill="#5B6678">SYSTÈMES D'ENTREPRISE</text>
+      </svg>
+    </div>
+    <p class="sig"><b>We don't build AI applications.</b> We engineer the systems that make them possible.</p>
+  </div></section>
+
+  <section class="tagline"><div class="wrap">
+    <p>Les applications exécutent.<br><span class="grad">Les systèmes intelligents décident.</span></p>
+  </div></section>
+
+  <section class="organism" id="organisme"><div class="wrap">
+    <span class="eyebrow">L'organisme</span>
+    <h2>Un seul système. Plusieurs organes.</h2>
+    <p class="lead">Vos systèmes ne se parlent pas. Nous les faisons penser ensemble — chaque brique de Synchronia est l'organe d'une même intelligence.</p>
+    <div class="netwrap">
+      <svg viewBox="0 0 820 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte cognitive des organes de Synchronia">
+        <defs>
+          <linearGradient id="ln" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3DDC97"/></linearGradient>
+          <radialGradient id="hubg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3DDC97" stop-opacity=".9"/><stop offset=".55" stop-color="#3DDC97" stop-opacity=".14"/><stop offset="1" stop-color="#3DDC97" stop-opacity="0"/></radialGradient>
+          <radialGradient id="ng" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3DDC97" stop-opacity=".55"/><stop offset="1" stop-color="#3DDC97" stop-opacity="0"/></radialGradient>
+          <radialGradient id="na" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#E9A94B" stop-opacity=".5"/><stop offset="1" stop-color="#E9A94B" stop-opacity="0"/></radialGradient>
+          <filter id="gl" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- fond : anneaux + maillage -->
+        <g fill="none" stroke="#3DDC97" opacity=".07"><circle cx="410" cy="240" r="90"/><circle cx="410" cy="240" r="150"/><circle cx="410" cy="240" r="210"/></g>
+        <g stroke="#22D3EE" stroke-width=".5" opacity=".10">
+          <line x1="120" y1="168" x2="410" y2="78"/><line x1="410" y1="78" x2="700" y2="168"/><line x1="700" y1="168" x2="636" y2="392"/>
+          <line x1="636" y1="392" x2="184" y2="392"/><line x1="184" y1="392" x2="120" y2="168"/>
+          <line x1="120" y1="168" x2="700" y2="168"/><line x1="184" y1="392" x2="410" y2="78"/><line x1="636" y1="392" x2="410" y2="78"/>
+        </g>
+        <g fill="#22D3EE" opacity=".25"><circle cx="265" cy="123" r="1.6"/><circle cx="555" cy="123" r="1.6"/><circle cx="668" cy="280" r="1.6"/><circle cx="410" cy="392" r="1.6"/><circle cx="152" cy="280" r="1.6"/></g>
+        <!-- flux hub->organes -->
+        <g stroke="url(#ln)" stroke-width="1.6" opacity=".75" fill="none" filter="url(#gl)">
+          <line class="flux" x1="410" y1="240" x2="410" y2="78"/>
+          <line class="flux" x1="410" y1="240" x2="700" y2="168"/>
+          <line class="flux" x1="410" y1="240" x2="636" y2="392"/>
+          <line class="flux" x1="410" y1="240" x2="184" y2="392"/>
+          <line class="flux" x1="410" y1="240" x2="120" y2="168"/>
+        </g>
+        <!-- organes -->
+        <g filter="url(#gl)">
+          <circle cx="410" cy="78" r="42" fill="url(#ng)"/><circle cx="410" cy="78" r="22" fill="#0E1420" stroke="#3DDC97" stroke-width="1.6"/><circle cx="410" cy="78" r="7" fill="#3DDC97"/>
+          <circle cx="700" cy="168" r="40" fill="url(#na)"/><circle cx="700" cy="168" r="22" fill="#0E1420" stroke="#E9A94B" stroke-width="1.6"/><circle cx="700" cy="168" r="7" fill="#E9A94B"/>
+          <circle cx="636" cy="392" r="40" fill="url(#ng)"/><circle cx="636" cy="392" r="22" fill="#0E1420" stroke="#3DDC97" stroke-width="1.6"/><circle cx="636" cy="392" r="7" fill="#3DDC97"/>
+          <circle cx="184" cy="392" r="40" fill="url(#na)"/><circle cx="184" cy="392" r="22" fill="#0E1420" stroke="#E9A94B" stroke-width="1.6"/><circle cx="184" cy="392" r="7" fill="#E9A94B"/>
+          <circle cx="120" cy="168" r="40" fill="url(#na)"/><circle cx="120" cy="168" r="22" fill="#0E1420" stroke="#E9A94B" stroke-width="1.6"/><circle cx="120" cy="168" r="7" fill="#E9A94B"/>
+        </g>
+        <g font-family="'Space Grotesk',sans-serif" font-weight="600" font-size="13" fill="#EAEEF5">
+          <text x="410" y="122" text-anchor="middle">Le Cerveau</text><text x="700" y="212" text-anchor="middle">Les Yeux</text>
+          <text x="636" y="436" text-anchor="middle">Les Agents</text><text x="184" y="436" text-anchor="middle">La Mémoire</text><text x="120" y="212" text-anchor="middle">La Voix</text>
+        </g>
+        <g font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#5B6678">
+          <text x="410" y="137" text-anchor="middle">AnaHybrid</text><text x="700" y="227" text-anchor="middle">Vision</text>
+          <text x="636" y="451" text-anchor="middle">Agents signés</text><text x="184" y="451" text-anchor="middle">LegacyGraph</text><text x="120" y="227" text-anchor="middle">AnaVoice</text>
+        </g>
+        <!-- hub -->
+        <circle cx="410" cy="240" r="72" fill="url(#hubg)" class="nhalo"/>
+        <circle cx="410" cy="240" r="38" fill="#0B111C" stroke="url(#ln)" stroke-width="2" filter="url(#gl)"/>
+        <circle cx="410" cy="240" r="26" fill="none" stroke="#3DDC97" stroke-width=".7" opacity=".5"/>
+        <circle cx="410" cy="240" r="10" fill="#3DDC97" filter="url(#gl)"/>
+        <text x="410" y="302" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="11.5" letter-spacing="3" fill="#EAEEF5">LE SYSTÈME</text>
+      </svg>
+    </div>
+    <div class="orgkey"><span><i style="background:#3DDC97"></i>Opérationnel</span><span><i style="background:#E9A94B"></i>En développement</span></div>
+    <p style="text-align:center;margin-top:16px"><a href="#anahybrid-section" class="btn btn-s" style="display:inline-flex">Explorer le programme AnaHybrid ↓</a></p>
+  </div></section>
+
+  <section id="anahybrid-section"><div class="wrap">
+    <div class="research">
+      <div class="rhero">
+        <img class="poster" src="assets/anahybrid-architecture.jpg" alt="AnaHybrid — architecture cognitive à mémoire triple couche" loading="lazy" decoding="async" onclick="if(window.openAnaHybrid)window.openAnaHybrid()">
+        <span class="rk">Programme de recherche · Synchronia Labs</span>
+        <h1>AnaHybrid — <span class="grad">le moteur cognitif souverain</span>.</h1>
+        <p class="tag">Mémoire persistante · raisonnement hybride · exécution locale</p>
+        <span class="pstate"><i></i>Prototype opérationnel — en évolution</span>
+      </div>
+      <p class="rlead">La plupart des systèmes d'IA oublient. À chaque requête, le modèle repart de zéro. <b>AnaHybrid explore l'hypothèse inverse</b> : une intelligence locale dotée d'une mémoire qui dure, qui consolide l'expérience en connaissance, et qui raisonne sur ce qu'elle a vécu — sans jamais dépendre du cloud.</p>
+
+      <h3 style="font-family:var(--fd);font-weight:600;font-size:17px;margin:26px 0 12px">L'hypothèse</h3>
+      <p class="rlead">Une architecture cognitive à <b>mémoire tri-couche</b>, exécutée sur matériel local, peut atteindre une continuité et une pertinence contextuelle qu'un modèle sans mémoire n'atteint pas — tout en gardant la donnée souveraine.</p>
+
+      <h3 style="font-family:var(--fd);font-weight:600;font-size:17px;margin:26px 0 12px">L'architecture</h3>
+      <div class="rlayers">
+        <div class="rlayer"><div class="ln">Épisodique</div><div class="ld"><b>Ce qui s'est passé.</b> Mémoire des événements et interactions, horodatée — la trace brute de l'expérience.</div></div>
+        <div class="rlayer"><div class="ln">Sémantique</div><div class="ld"><b>Ce que ça signifie.</b> Recherche vectorielle (FAISS) : les faits reliés par le sens, pas par l'ordre chronologique.</div></div>
+        <div class="rlayer"><div class="ln">Conceptuelle</div><div class="ld"><b>Ce qu'on en retient.</b> Abstraction : les régularités extraites de l'expérience deviennent des concepts réutilisables.</div></div>
+      </div>
+      <p class="rlead" style="margin-top:12px">Un flux vertical relie les couches : l'épisodique se consolide en sémantique, le sémantique se distille en conceptuel — le mécanisme par lequel une exécution répétée devient une compétence.</p>
+
+      <div class="rgrid" style="margin-top:24px">
+        <div class="rblock proven rcard"><h3>Ce qui est démontré</h3><ul>
+          <li>Le moteur tourne en local, sur GPU, sans appel cloud.</li>
+          <li>Les trois couches de mémoire sont implémentées et interrogées.</li>
+          <li>Recherche sémantique opérationnelle (FAISS + stockage structuré).</li>
+          <li>Routage mémoire-d'abord : le système consulte son vécu avant de répondre.</li>
+        </ul></div>
+        <div class="rblock open rcard"><h3>Ce qui reste ouvert</h3><ul>
+          <li>Consolidation automatique épisodique → conceptuelle à grande échelle.</li>
+          <li>Évaluation quantitative sur benchmarks reproductibles.</li>
+          <li>Passage à l'échelle : plus de contexte, plus de mémoire, plus de calcul.</li>
+          <li>Généralisation multi-domaines et multi-agents.</li>
+        </ul></div>
+      </div>
+
+      <div class="rcall"><h3>Pourquoi ce programme cherche des partenaires</h3>
+        <p>Le prototype fonctionne — sur du matériel modeste. Son plein potentiel (mémoire longue, consolidation profonde, évaluation rigoureuse) exige une <b>montée en calcul</b> qu'un poste isolé ne permet pas. C'est précisément l'objet de la collaboration recherchée : transformer une hypothèse qui tourne en un résultat mesuré et publiable.</p>
+        <div class="who"><span>Laboratoires</span><span>Universités</span><span>Financement recherche</span><span>Accès calcul / GPU</span></div>
+        <a class="btn btn-p cta" href="#contact">Discuter d'une collaboration →</a>
+      </div>
+    </div>
+  </div></section>
+
+
+
+  <section class="proof"><div class="wrap">
+    <span class="eyebrow">Réalisations · preuves</span>
+    <h2>Ce qui tourne, pas ce qu'on promet.</h2>
+    <p class="sub">Pas de mur de logos. Quatre systèmes réels, un fait précis chacun — vérifiable.</p>
+    <div class="proof-grid" id="preuveGrid">
+      <div class="pcard">
+        <div class="ph"><span class="pn">SynchroAgence</span><span class="pb"><i class="d"></i>En production</span></div>
+        <p>ERP multi-locataire pour agences de voyage, en production : extraction darija / français, mode comptoir, facturation bilingue.</p>
+      </div>
+      <div class="pcard">
+        <div class="ph"><span class="pn">AnaHybrid</span><span class="pb"><i class="d"></i>Opérationnel</span></div>
+        <p>Moteur cognitif local à mémoire triple couche — épisodique, sémantique, conceptuelle — exécuté sur GPU local, sans cloud.</p>
+      </div>
+      <div class="pcard">
+        <div class="ph"><span class="pn">Infrastructure critique</span><span class="pb anon"><i class="d"></i>Cas anonymisé</span></div>
+        <p>Audit et remise en état d'une infrastructure critique de <span class="metric">335 équipements</span>, avec une amélioration mesurable de la disponibilité opérationnelle en moins de trois semaines.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="products" id="produits"><div class="wrap">
+    <span class="eyebrow">Solutions — produits</span>
+    <h2>Des ERP prêts à déployer.</h2>
+    <p class="psub">Deux systèmes métier aboutis, conçus et construits en interne.</p>
+    <div id="produitsGrid">
+
+    <div class="product">
+      <div class="p-visual"><img src="assets/synchroagence.jpg" alt="SynchroAgence — ERP agence de voyage" onerror="this.style.display='none'" loading="lazy" decoding="async"><span class="p-ph">Visuel produit —&nbsp;/assets/synchroagence.jpg</span></div>
+      <div class="p-body">
+        <div class="p-head"><span class="p-name">SynchroAgence</span><span class="pbadge live"><i class="d"></i>En production</span></div>
+        <p class="p-lead">ERP multi-locataire pour agences de voyage. En production, prêt à la vente et au déploiement.</p>
+        <ul class="p-feats">
+          <li>Mode Comptoir — extraction darija / français par IA</li>
+          <li>Mode AUTO — validation dès 80&nbsp;% de confiance, annulation en 30&nbsp;s</li>
+          <li>Multi-locataire — logo, NIF et facturation propres à chaque agence</li>
+          <li>Devis, vols, hôtels, comptabilité, tableau de bord</li>
+          <li>Facturation bilingue français / arabe</li>
+        </ul>
+        <div class="p-principle"><span>Agents signés (SASS)</span><span>Traçable</span><span>Multi-tenant</span></div>
+      </div>
+    </div>
+
+    <div class="product rev">
+      <div class="p-visual"><img src="assets/syncromra.jpg" alt="SyncrOmra — ERP Hajj &amp; Omra" onerror="this.style.display='none'" loading="lazy" decoding="async"><span class="p-ph">Visuel produit —&nbsp;/assets/syncromra.jpg</span></div>
+      <div class="p-body">
+        <div class="p-head"><span class="p-name">SyncrOmra</span><span class="pbadge prep"><i class="d"></i>Presque finalisé</span></div>
+        <p class="p-lead">ERP Hajj &amp; Omra, offline-first. « Gérez votre voyage — avec confiance et intelligence. »</p>
+        <ul class="p-feats">
+          <li>Scan passeport MRZ par IA — saisie automatique du dossier (connexion requise pour le scan)</li>
+          <li>Parcours pèlerin en neuf phases</li>
+          <li>Chaîne de reçus signée HMAC — chaque paiement vérifiable</li>
+          <li>Facturation bilingue — gestion utilisable hors connexion (PWA)</li>
+        </ul>
+        <div class="p-principle"><span>QR — interface de confiance</span><span>MRZ</span><span>HMAC</span><span>Offline-first</span></div>
+      </div>
+    </div>
+    </div>
+  </div></section>
+
+  <section class="brain"><div class="wrap">
+    <div class="bbox">
+      <div class="btext">
+        <span class="eyebrow">Programme de recherche phare</span>
+        <h2>SynchroniaBrain — le cerveau des drones et des essaims.</h2>
+        <p>Un cerveau embarqué pour drones intelligents et flottes robotisées : planification de mission, techniques de vol, contrôle, coordination d'essaims. Domaines visés : agriculture de précision, robotique, supervision de terrain — avec ou sans matériel, par la simulation.</p>
+        <div class="bstack"><span>Vision</span><span>Essaims</span><span>Edge</span></div>
+        <span class="bstate"><i></i>En développement</span>
+      </div>
+      <div class="bvisual">
+        <img src="assets/synchroniabrain.jpg" alt="SynchroniaBrain — cerveau pour drones et essaims" onerror="this.style.display='none'" loading="lazy" decoding="async">
+        <span class="bph">Affiche produit — déposez votre visuel dans&nbsp;/assets/synchroniabrain.jpg</span>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="contact" id="contact"><div class="wrap">
+    <h2>Parlons de votre projet.</h2>
+    <p>Décrivez votre contexte, vos objectifs ou vos contraintes. Nous reviendrons vers vous avec une première analyse et une proposition d'architecture adaptée.</p>
+    <form class="cform" id="contactForm">
+      <div class="row">
+        <div class="field"><label for="cf-nom">Nom</label><input id="cf-nom" name="nom" type="text" required></div>
+        <div class="field"><label for="cf-org">Organisation</label><input id="cf-org" name="org" type="text"></div>
+      </div>
+      <div class="field"><label for="cf-mail">Email professionnel</label><input id="cf-mail" name="email" type="email" required></div>
+      <div class="field"><label for="cf-msg">Votre projet</label><textarea id="cf-msg" name="message" placeholder="Contexte, objectifs, contraintes…" required></textarea></div>
+      <button type="submit" class="btn btn-p send">Envoyer →</button>
+      <p class="formstatus" id="formStatus" hidden></p>
+      <p class="alt">Ou directement : <a href="mailto:contact@synchronia-labs.ai">contact@synchronia-labs.ai</a> &nbsp;·&nbsp; <a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a> &nbsp;·&nbsp; <a href="tel:+213559162730">0559 16 27 30</a></p>
+    </form>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div class="fcol"><h4>Synchronia Labs</h4><span>Cabinet indépendant · Architecture des systèmes intelligents</span><span>Dar El Beida, Alger — Algérie</span></div>
+    <div class="fcol"><h4>Cabinet</h4><a href="#architecture">Architecture cognitive</a><a href="#espaces">Recherche</a><a href="#espaces">Solutions</a><a href="#espaces">Publications</a></div>
+    <div class="fcol"><h4>Contact</h4><a href="mailto:contact@synchronia-labs.ai">contact@synchronia-labs.ai</a><a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a><a href="tel:+213559162730">0559 16 27 30</a><a href="https://www.linkedin.com/in/nabil-aknine-198318382" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div class="fcol"><h4>Légal</h4><a href="#" id="lnkMentions">Mentions légales</a><a href="#" id="lnkConfid">Confidentialité</a></div>
+  </div>
+  <div class="fbottom">© 2026 Synchronia Labs — Conçu comme un système, pas comme une vitrine.</div>
+</div></footer>
+
+<script>
+  var f=document.getElementById('contactForm');
+  if(f){
+    var statusEl=document.getElementById('formStatus');
+    var show=function(msg,kind){ if(!msg){statusEl.hidden=true;return;} statusEl.hidden=false; statusEl.textContent=msg; statusEl.className='formstatus'+(kind?(' '+kind):''); };
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var data={nom:f.nom.value.trim(),organisation:f.org.value.trim(),email:f.email.value.trim(),message:f.message.value.trim()};
+      var btn=f.querySelector('button[type=submit]');
+      btn.disabled=true; show('Envoi en cours…','');
+      fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+        .then(function(r){ if(!r.ok) throw new Error('http'); return r; })
+        .then(function(){ f.reset(); btn.disabled=false; show('Merci — votre message a bien été transmis. Nous revenons vers vous rapidement.','ok'); })
+        .catch(function(){
+          /* repli : route non déployée → e-mail pré-rempli, jamais un cul-de-sac */
+          var sujet='Projet — '+(data.organisation||data.nom||'Prise de contact');
+          var corps='Nom : '+data.nom+'\nOrganisation : '+data.organisation+'\nEmail : '+data.email+'\n\n'+data.message;
+          window.location.href='mailto:contact@synchronia-labs.ai?subject='+encodeURIComponent(sujet)+'&body='+encodeURIComponent(corps);
+          btn.disabled=false; show('',''); 
+        });
+    });
+  }
+</script>
+<script>
+/* Moteur d'administration : si un content.json est présent à côté de la page,
+   il remplace produits, preuves et états des espaces. Sinon, contenu par défaut. */
+(function(){
+  var esc=function(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
+  function badge(st,lb){var c=(st==='live')?'live':(st==='anon')?'anon':'prep';return '<span class="pbadge '+c+'"><i class="d"></i>'+esc(lb)+'</span>';}
+  function produits(list){var el=document.getElementById('produitsGrid');if(!el||!Array.isArray(list))return;
+    el.innerHTML=list.map(function(p,i){var rev=(i%2)?' rev':'';
+      var f=(p.features||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('');
+      var t=(p.tags||[]).map(function(x){return '<span>'+esc(x)+'</span>';}).join('');
+      var img=p.image?'<img src="'+p.image+'" alt="'+esc(p.name)+'" onerror="this.style.display=\'none\'" loading="lazy" decoding="async">':'';
+      return '<div class="product'+rev+'"><div class="p-visual">'+img+'<span class="p-ph">Visuel produit</span></div>'
+        +'<div class="p-body"><div class="p-head"><span class="p-name">'+esc(p.name)+'</span>'+badge(p.status,p.statusLabel)+'</div>'
+        +'<p class="p-lead">'+esc(p.lead)+'</p><ul class="p-feats">'+f+'</ul>'
+        +(t?'<div class="p-principle">'+t+'</div>':'')+'</div></div>';}).join('');}
+  function preuves(list){var el=document.getElementById('preuveGrid');if(!el||!Array.isArray(list))return;
+    el.innerHTML=list.map(function(p){return '<div class="pcard"><div class="ph"><span class="pn">'+esc(p.name)+'</span>'+badge(p.status,p.statusLabel)+'</div><p>'+esc(p.text)+'</p></div>';}).join('');}
+  function espaces(map){if(!map)return;document.querySelectorAll('#espacesGrid .space').forEach(function(sp){
+    var n=sp.querySelector('.no');if(!n)return;var e=map[n.textContent.trim()];if(!e)return;
+    var flag=sp.classList.contains('flag');sp.className='space'+(flag?' flag':'')+(e.on?' on':' off');
+    var st=sp.querySelector('.state');if(st)st.innerHTML='<i class="d"></i>'+esc(e.label||(e.on?'Actif':'En construction'));});}
+  fetch('content.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();})
+    .then(function(c){if(c.produits)produits(c.produits);if(c.preuves)preuves(c.preuves);if(c.espaces)espaces(c.espaces);})
+    .catch(function(){});
+})();
+</script>
+<div class="ovl" id="legalOvl" aria-modal="true" role="dialog"><div class="panel" id="legalPanel"></div></div>
+<script>
+var LEGAL={
+ mentions:{t:"Mentions légales",h:'<button class="close" aria-label="Fermer">Fermer ✕</button><span class="pk">Légal</span><h2>Mentions légales</h2>'
+  +'<h3>Éditeur du site</h3><p>Le présent site <b>www.synchronia-labs.ai</b> est édité par <b>Synchronia Labs</b>, EURL de droit algérien.</p>'
+  +'<ul><li>Dénomination : <b>Synchronia Labs</b> (EURL)</li><li>Siège social : Dar El Beida, Alger — Algérie</li><li>Gérant : Nabil Aknine</li><li>Registre de commerce (RC) : <b>[À COMPLÉTER]</b></li><li>NIF : <b>[À COMPLÉTER]</b> · NIS : <b>[À COMPLÉTER]</b></li><li>Capital social : <b>[À COMPLÉTER]</b> DZD</li><li>Contact : contact@synchronia-labs.ai · nabil@synchronia-labs.ai</li><li>Téléphone : 0559 16 27 30 (+213559162730)</li></ul>'
+  +'<h3>Hébergement</h3><p>Site hébergé sur serveur dédié. Hébergeur : <b>[À COMPLÉTER — nom et adresse de l\'hébergeur, ex. Contabo GmbH]</b>.</p>'
+  +'<h3>Propriété intellectuelle</h3><p>L\'ensemble des contenus (textes, schémas, visuels, marques Synchronia Labs, SynchroAgence, SyncrOmra, AnaHybrid, SynchroniaBrain) est la propriété exclusive de Synchronia Labs, sauf mention contraire. Toute reproduction sans autorisation est interdite.</p>'
+  +'<h3>Responsabilité</h3><p>Synchronia Labs s\'efforce d\'assurer l\'exactitude des informations publiées, sans garantie d\'exhaustivité. Les états de déploiement affichés (en production, en préparation, cible) reflètent l\'avancement réel à la date de publication.</p>'
+  +'<h3>Droit applicable</h3><p>Le présent site est régi par le droit algérien. Tout litige relève de la compétence des juridictions d\'Alger.</p>'},
+ confid:{t:"Confidentialité",h:'<button class="close" aria-label="Fermer">Fermer ✕</button><span class="pk">Légal</span><h2>Politique de confidentialité</h2>'
+  +'<p class="intro">Synchronia Labs respecte la confidentialité des données conformément à la loi n° 18-07 relative à la protection des personnes physiques dans le traitement des données à caractère personnel.</p>'
+  +'<h3>Données collectées</h3><p>Via le formulaire de contact, nous collectons uniquement : nom, organisation, adresse e-mail professionnelle, et le message que vous rédigez.</p>'
+  +'<h3>Finalité</h3><ul><li>Répondre à votre demande et vous proposer une première analyse.</li><li>Assurer le suivi de la relation commerciale que vous initiez.</li></ul><p>Aucune donnée n\'est utilisée à d\'autres fins, ni revendue, ni cédée à un tiers.</p>'
+  +'<h3>Conservation</h3><p>Vos données sont conservées le temps nécessaire au traitement de votre demande, puis archivées ou supprimées.</p>'
+  +'<h3>Hébergement &amp; souveraineté</h3><p>Les messages sont traités sur notre propre infrastructure. Nous privilégions un hébergement maîtrisé, cohérent avec notre doctrine de souveraineté des données.</p>'
+  +'<h3>Vos droits</h3><p>Vous disposez d\'un droit d\'accès, de rectification et de suppression de vos données. Pour l\'exercer : <b>contact@synchronia-labs.ai</b>.</p>'
+  +'<h3>Cookies</h3><p>Ce site n\'utilise pas de cookies de suivi publicitaire. Aucune donnée comportementale n\'est collectée à des fins de traçage.</p>'}
+};
+(function(){
+  var ovl=document.getElementById('legalOvl'),panel=document.getElementById('legalPanel'),last=null;
+  function open(k){var e=LEGAL[k];if(!e)return;panel.innerHTML=e.h;ovl.classList.add('open');document.body.classList.add('noscroll');
+    panel.querySelector('.close').onclick=close;last=document.activeElement;panel.querySelector('.close').focus();}
+  function close(){ovl.classList.remove('open');document.body.classList.remove('noscroll');if(last)last.focus();}
+  ovl.addEventListener('click',function(e){if(e.target===ovl)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ovl.classList.contains('open'))close();});
+  var lm=document.getElementById('lnkMentions'),lc=document.getElementById('lnkConfid');
+  if(lm)lm.addEventListener('click',function(e){e.preventDefault();open('mentions');});
+  if(lc)lc.addEventListener('click',function(e){e.preventDefault();open('confid');});
+})();
+</script>
+<div class="ovl" id="anaOvl" aria-modal="true" role="dialog"><div class="panel" id="anaPanel" style="max-width:960px"></div></div>
+<script>
+(function(){
+ var ovl=document.getElementById('anaOvl'),panel=document.getElementById('anaPanel'),last=null;
+ var POSTER="assets/anahybrid-architecture.jpg";
+ var html='<button class="close" aria-label="Fermer">Fermer \u2715</button>'
+ +'<section class="research"><div class="rhero">'
+ + (POSTER?'<img class="poster" src="'+POSTER+'" alt="AnaHybrid \u2014 moteur cognitif \u00e0 m\u00e9moire triple couche" loading="lazy" decoding="async">':'')
+ +'<span class="rk">Programme de recherche \u00b7 Synchronia Labs</span>'
+ +'<h1>AnaHybrid \u2014 <span class="grad">le moteur cognitif souverain</span>.</h1>'
+ +'<p class="tag">M\u00e9moire persistante \u00b7 raisonnement hybride \u00b7 ex\u00e9cution locale</p>'
+ +'<span class="pstate"><i></i>Prototype op\u00e9rationnel \u2014 en \u00e9volution</span>'
+ +'</div>'
+ +'<p class="rlead">La plupart des syst\u00e8mes d\u2019IA oublient. \u00c0 chaque requ\u00eate, le mod\u00e8le repart de z\u00e9ro. <b>AnaHybrid explore l\u2019hypoth\u00e8se inverse</b> : une intelligence locale dot\u00e9e d\u2019une m\u00e9moire qui dure, qui consolide l\u2019exp\u00e9rience en connaissance, et qui raisonne sur ce qu\u2019elle a v\u00e9cu \u2014 sans jamais d\u00e9pendre du cloud.</p>'
+
+ +'<h3 style="font-family:var(--fd);font-weight:600;font-size:17px;margin:26px 0 12px">L\u2019hypoth\u00e8se</h3>'
+ +'<p class="rlead">Une architecture cognitive \u00e0 <b>m\u00e9moire tri-couche</b>, ex\u00e9cut\u00e9e sur mat\u00e9riel local, peut atteindre une continuit\u00e9 et une pertinence contextuelle qu\u2019un mod\u00e8le sans m\u00e9moire n\u2019atteint pas \u2014 tout en gardant la donn\u00e9e souveraine.</p>'
+
+ +'<h3 style="font-family:var(--fd);font-weight:600;font-size:17px;margin:26px 0 12px">L\u2019architecture</h3>'
+ +'<div class="rlayers">'
+ +'<div class="rlayer"><div class="ln">\u00c9pisodique</div><div class="ld"><b>Ce qui s\u2019est pass\u00e9.</b> M\u00e9moire des \u00e9v\u00e9nements et interactions, horodat\u00e9e \u2014 la trace brute de l\u2019exp\u00e9rience.</div></div>'
+ +'<div class="rlayer"><div class="ln">S\u00e9mantique</div><div class="ld"><b>Ce que \u00e7a signifie.</b> Recherche vectorielle (FAISS) : les faits reli\u00e9s par le sens, pas par l\u2019ordre chronologique.</div></div>'
+ +'<div class="rlayer"><div class="ln">Conceptuelle</div><div class="ld"><b>Ce qu\u2019on en retient.</b> Abstraction : les r\u00e9gularit\u00e9s extraites de l\u2019exp\u00e9rience deviennent des concepts r\u00e9utilisables.</div></div>'
+ +'</div>'
+ +'<p class="rlead" style="margin-top:12px">Un flux vertical relie les couches : l\u2019\u00e9pisodique se consolide en s\u00e9mantique, le s\u00e9mantique se distille en conceptuel \u2014 le m\u00e9canisme par lequel une ex\u00e9cution r\u00e9p\u00e9t\u00e9e devient une comp\u00e9tence.</p>'
+
+ +'<div class="rgrid" style="margin-top:24px">'
+ +'<div class="rblock proven rcard"><h3>Ce qui est d\u00e9montr\u00e9</h3><ul>'
+ +'<li>Le moteur tourne en local, sur GPU, sans appel cloud.</li>'
+ +'<li>Les trois couches de m\u00e9moire sont impl\u00e9ment\u00e9es et interrog\u00e9es.</li>'
+ +'<li>Recherche s\u00e9mantique op\u00e9rationnelle (FAISS + stockage structur\u00e9).</li>'
+ +'<li>Routage m\u00e9moire-d\u2019abord : le syst\u00e8me consulte son v\u00e9cu avant de r\u00e9pondre.</li>'
+ +'</ul></div>'
+ +'<div class="rblock open rcard"><h3>Ce qui reste ouvert</h3><ul>'
+ +'<li>Consolidation automatique \u00e9pisodique \u2192 conceptuelle \u00e0 grande \u00e9chelle.</li>'
+ +'<li>\u00c9valuation quantitative sur benchmarks reproductibles.</li>'
+ +'<li>Passage \u00e0 l\u2019\u00e9chelle : plus de contexte, plus de m\u00e9moire, plus de calcul.</li>'
+ +'<li>G\u00e9n\u00e9ralisation multi-domaines et multi-agents.</li>'
+ +'</ul></div>'
+ +'</div>'
+
+ +'<div class="rcall"><h3>Pourquoi ce programme cherche des partenaires</h3>'
+ +'<p>Le prototype fonctionne \u2014 sur du mat\u00e9riel modeste. Son plein potentiel (m\u00e9moire longue, consolidation profonde, \u00e9valuation rigoureuse) exige une <b>mont\u00e9e en calcul</b> qu\u2019un poste isol\u00e9 ne permet pas. C\u2019est pr\u00e9cis\u00e9ment l\u2019objet de la collaboration recherch\u00e9e : transformer une hypoth\u00e8se qui tourne en un r\u00e9sultat mesur\u00e9 et publiable.</p>'
+ +'<div class="who"><span>Laboratoires</span><span>Universit\u00e9s</span><span>Financement recherche</span><span>Acc\u00e8s calcul / GPU</span></div>'
+ +'<a class="btn btn-p cta" href="#contact">Discuter d\u2019une collaboration \u2192</a>'
+ +'</div></section>';
+ function open(){panel.innerHTML=html;ovl.classList.add('open');document.body.classList.add('noscroll');
+   panel.querySelector('.close').onclick=close;panel.querySelectorAll('a.cta').forEach(function(a){a.addEventListener('click',close);});
+   last=document.activeElement;panel.querySelector('.close').focus();}
+ function close(){ovl.classList.remove('open');document.body.classList.remove('noscroll');if(last)last.focus();}
+ ovl.addEventListener('click',function(e){if(e.target===ovl)close();});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ovl.classList.contains('open'))close();});
+ window.openAnaHybrid=open;
+ document.querySelectorAll('[data-open="anahybrid"]').forEach(function(el){el.style.cursor='pointer';el.addEventListener('click',function(ev){ev.preventDefault();open();});});
+})();
+</script>
+<div class="ovl" id="espOvl" aria-modal="true" role="dialog"><div class="panel" id="espPanel"></div></div>
+<script>
+var ESPACES={
+E1:{t:"Architecture",st:"on",lb:"Actif · œuvre phare",intro:"La pensée système qui structure tout le reste : une doctrine, une méthode, une architecture de référence.",
+ sec:[
+  {h:"Notre doctrine",ul:["<b>La preuve avant la promesse</b> — chaque affirmation publiée est vérifiable ; l'état de déploiement est affiché sans fard.","<b>La confiance comme interface</b> — tout ce qui est produit doit pouvoir être vérifié par celui qui le reçoit.","<b>Souveraineté</b> — vos systèmes et vos données restent chez vous, explicables et maîtrisés.","<b>Aucune règle inventée</b> — en contexte réglementaire, chaque critère trace vers un texte précis."]},
+  {h:"Notre méthode",p:"Sept étapes, de bout en bout : comprendre le métier, diagnostiquer le système, concevoir l'architecture cible, développer les composants, déployer, former, accompagner."},
+  {h:"L'architecture de référence",p:"Sept couches — de l'expérience utilisateur à l'infrastructure — présentées sur cette page avec l'état réel de chaque composant. C'est le plan directeur qui guide chaque mission.",cta:{txt:"Voir les sept couches →",href:"#architecture"}}
+ ]},
+E2:{t:"Solutions SaaS",st:"on",lb:"Actif",intro:"Des produits métier aboutis, conçus et construits en interne — déployés, supportés, et améliorés en continu.",
+ sec:[
+  {h:"SynchroAgence — en production",ul:["ERP multi-locataire pour agences de voyage, en production chez des clients réels.","Mode Comptoir : saisie naturelle darija / français, extraction par IA.","Devis, vols, hôtels, comptabilité, tableau de bord, facturation bilingue.","Déploiement : hébergé et opéré par Synchronia, ou sur votre infrastructure."]},
+  {h:"SyncrOmra — presque finalisé",ul:["ERP Hajj &amp; Omra : la gestion (dossiers, parcours, reçus, facturation) fonctionne hors connexion.","Scan passeport par IA — nécessite une connexion ponctuelle ; le dossier reste ensuite disponible hors-ligne.","Parcours pèlerin en neuf phases, reçus vérifiables.","Pilote en préparation avec une agence réelle avant ouverture commerciale."]},
+  {h:"Modèle de support",p:"Chaque produit est livré avec formation des équipes, assistance directe avec le concepteur, et évolutions continues issues du terrain.",cta:{txt:"Voir les produits en détail →",href:"#produits"}}
+ ]},
+E3:{t:"Développement",st:"on",lb:"Actif",intro:"Quand le produit n'existe pas, nous le construisons — sur mesure, chez vous, avec la même architecture de référence.",
+ sec:[
+  {h:"Ce que nous développons",ul:["Applications métier intelligentes — ERP, gestion, supervision.","Systèmes de vision par ordinateur et d'analyse vidéo.","Agents IA signés, traçables et rejouables — jamais de boîte noire.","Moteurs cognitifs à mémoire persistante, exécutés sur votre matériel.","Intégration à vos systèmes existants — API, connecteurs, webhooks."]},
+  {h:"Comment nous travaillons",ul:["Un interlocuteur unique : l'architecte qui conçoit est celui qui construit.","Chaque modification tracée, chaque déploiement réversible.","Vos données ne quittent jamais votre périmètre sans votre décision."]},
+  {h:"Engagement",p:"Nous ne livrons pas du code : nous livrons un système documenté, opérable et transmissible.",cta:{txt:"Parler de votre projet →",href:"#contact"}}
+ ]},
+E4:{t:"Audit & Conseil",st:"on",lb:"Actif",intro:"Diagnostic, urbanisation du système d'information, cybersécurité : voir clair avant de construire.",
+ sec:[
+  {h:"Nos interventions",ul:["<b>Diagnostic de parc et d'infrastructure</b> — inventaire, criticité, plan de remise à niveau.","<b>Urbanisation SI</b> — cartographie des systèmes, rationalisation, trajectoire cible.","<b>Cybersécurité</b> — durcissement serveurs, gestion des secrets, surface d'exposition.","<b>Conformité documentaire</b> — chaque recommandation trace vers une exigence précise."]},
+  {h:"Une référence",p:"Audit et remise en état d'une infrastructure critique de 335 équipements — amélioration mesurable de la disponibilité opérationnelle en moins de trois semaines. (Cas anonymisé.)"},
+  {h:"Livrables",p:"Rapport d'audit signé, plan d'action priorisé, et si vous le souhaitez : l'exécution du plan par nos soins.",cta:{txt:"Demander un diagnostic →",href:"#contact"}}
+ ]},
+E5:{t:"Formation",st:"off",lb:"En construction",intro:"Transmettre la pratique réelle — pas la théorie hors-sol. Ouverture prochaine.",
+ sec:[
+  {h:"Le programme en préparation",ul:["<b>F-01</b> Orchestration multi-modèles — faire travailler plusieurs IA en complémentarité.","<b>F-02</b> Conception d'agents signés — automatiser sans perdre le contrôle.","<b>F-03</b> RAG &amp; mémoire — donner à vos systèmes une connaissance qui dure.","<b>F-04</b> Déploiement souverain — exécuter l'IA sur vos propres machines."]},
+  {h:"Format",p:"Ateliers pratiques en petit groupe, sur vos cas réels, en français et en darija. Les sessions ouvriront après le premier cycle pilote."},
+  {h:"Être prévenu",p:"Laissez vos coordonnées : vous serez informé de l'ouverture des premières sessions.",cta:{txt:"Me prévenir →",href:"#contact"}}
+ ]},
+E6:{t:"R&D",st:"on",lb:"Actif",intro:"La recherche appliquée qui alimente les produits : mémoire, agents, cognition — testée sur le terrain, pas en slides.",
+ sec:[
+  {h:"Programmes en cours",ul:["<b>AnaHybrid</b> — moteur cognitif local à mémoire triple couche (épisodique, sémantique, conceptuelle), exécuté sur GPU local, sans cloud. Opérationnel.","<b>SynchroniaBrain</b> — cerveau pour drones et essaims : mission, vol, coordination. En développement.","<b>Agents signés</b> — standard interne d'agents traçables, idempotents et rejouables. En production dans nos produits.","<b>AnaVoice</b> — synthèse vocale darija. Programme de long terme."]},
+  {h:"Publications & programmes",p:"Nos notes techniques et retours d'expérience seront publiés dans l'espace Ressources à son ouverture. AnaHybrid — notre moteur cognitif à mémoire triple couche — est documenté comme programme de recherche ouvert.",cta:{txt:"Ouvrir le programme AnaHybrid →",href:"#organisme"}}
+ ]},
+E7:{t:"Partenaires & Écosystème",st:"off",lb:"En construction",intro:"Un cabinet solo par conception, un écosystème par ambition. Cet espace s'ouvre — et il commence par une invitation.",
+ sec:[
+  {h:"Qui nous cherchons",ul:["<b>Agences &amp; intégrateurs</b> — qui veulent proposer nos produits à leurs clients.","<b>Freelances seniors</b> — pour des missions ponctuelles sous notre standard qualité.","<b>Universités &amp; écoles</b> — projets de recherche appliquée, encadrement.","<b>Startups</b> — complémentarités produit, co-développement."]},
+  {h:"Ce que nous offrons",p:"Un standard d'ingénierie documenté, des produits en production à distribuer, et un partage de valeur clair dès le premier contrat."},
+  {h:"Proposer un partenariat",p:"Écrivez-nous en décrivant qui vous êtes et ce que vous imaginez.",cta:{txt:"Proposer un partenariat →",href:"#contact"}}
+ ]},
+E8:{t:"Ressources",st:"off",lb:"En construction",intro:"Documentation, notes techniques, publications. L'espace ouvrira avec du contenu réel — pas des placeholders.",
+ sec:[
+  {h:"Ce qui arrive",ul:["<b>Blog technique</b> — retours d'expérience de production : architecture, agents, mémoire.","<b>Notes de recherche</b> — nos travaux sur la cognition locale et les systèmes souverains.","<b>Documentation produit</b> — guides d'utilisation SynchroAgence et SyncrOmra.","<b>Livres blancs</b> — l'IA souveraine pour les institutions."]},
+  {h:"Principe",p:"Chaque ressource publiée ici sera issue d'un système réel. Pas de contenu généré pour remplir.",cta:{txt:"Être informé des publications →",href:"#contact"}}
+ ]}
+};
+(function(){
+  var ovl=document.getElementById('espOvl'),panel=document.getElementById('espPanel'),last=null;
+  function open(k){var e=ESPACES[k];if(!e)return;
+    var h='<button class="close" aria-label="Fermer">Fermer ✕</button>'
+      +'<span class="pk">'+k+' · Espace</span><h2>'+e.t+'</h2>'
+      +'<span class="pstate '+e.st+'"><i></i>'+e.lb+'</span>'
+      +'<p class="intro">'+e.intro+'</p>';
+    e.sec.forEach(function(sc){h+='<h3>'+sc.h+'</h3>';
+      if(sc.p)h+='<p>'+sc.p+'</p>';
+      if(sc.ul)h+='<ul>'+sc.ul.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';
+      if(sc.cta)h+='<a class="btn btn-p cta" href="'+sc.cta.href+'">'+sc.cta.txt+'</a>';});
+    panel.innerHTML=h;ovl.classList.add('open');document.body.classList.add('noscroll');
+    panel.querySelector('.close').onclick=close;
+    panel.querySelectorAll('a.cta').forEach(function(a){a.addEventListener('click',close);});
+    last=document.activeElement;panel.querySelector('.close').focus();}
+  function close(){ovl.classList.remove('open');document.body.classList.remove('noscroll');if(last)last.focus();}
+  ovl.addEventListener('click',function(e){if(e.target===ovl)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ovl.classList.contains('open'))close();});
+  document.querySelectorAll('.space[data-esp]').forEach(function(c){
+    c.addEventListener('click',function(){open(c.dataset.esp);});
+    c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(c.dataset.esp);}});
+  });
+})();
+</script>
+</body>
+</html>
