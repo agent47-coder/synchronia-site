@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Synchronia Labs — Institut d'ingénierie des systèmes intelligents</title>
-<meta name="description" content="Synchronia Labs — cabinet d'architecture des systèmes intelligents à Alger. Doctrine, produits SaaS, développement, audit & conseil, formation, R&D, écosystème.">
+<meta name="description" content="Synchronia Labs — institut d'ingénierie des systèmes intelligents à Alger. Doctrine, produits SaaS, développement, audit & conseil, formation, R&D, écosystème.">
 <link rel="canonical" href="https://www.synchronia-labs.ai/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Synchronia Labs">
@@ -371,6 +371,8 @@
   .panel li b{color:var(--accent);font-weight:500}
   .panel .cta{margin-top:26px;display:inline-flex}
   body.noscroll{overflow:hidden}
+  .p-visual .p-ph, .bvisual .bph{display:none}
+  .p-visual.noimg .p-ph, .bvisual.noimg .bph{display:flex}
   #anahybrid-section{padding:66px 0 20px}
   #anahybrid-section .research{padding:0}
   #anahybrid-section .rhero{margin-bottom:26px}
@@ -698,7 +700,7 @@
       </div>
       <div class="space on" data-esp="E6" role="button" tabindex="0">
         <span class="no">E6</span><h3>R&amp;D</h3>
-        <p>AnaCortex, AnaHybrid, agents cognitifs — la recherche qui alimente les produits.</p>
+        <p>AnaHybrid, agents signés, moteurs cognitifs — la recherche qui alimente les produits.</p>
         <span class="state"><i class="d"></i>Actif</span>
         <span class="more">Ouvrir l'espace →</span>
       </div>
@@ -731,7 +733,7 @@
         <div class="mlayer"><span class="n">L6</span><span class="nm">Integration — API, webhooks</span><span class="st st-live"></span></div>
         <div class="mlayer"><span class="n">L7</span><span class="nm">Infrastructure — VPS · PM2, Docker, CI/CD</span><span class="st st-live"></span></div>
       </div>
-      <a href="#contact" class="btn btn-p more">Explorer l'architecture complète →</a>
+      <a href="#showcase" class="btn btn-p more">Explorer l'architecture complète →</a>
     </div>
   </div></section>
 
@@ -928,7 +930,7 @@
     <div id="produitsGrid">
 
     <div class="product">
-      <div class="p-visual"><img src="assets/synchroagence.jpg" alt="SynchroAgence — ERP agence de voyage" onerror="this.style.display='none'" loading="lazy" decoding="async"><span class="p-ph">Visuel produit —&nbsp;/assets/synchroagence.jpg</span></div>
+      <div class="p-visual"><img src="assets/synchroagence.jpg" alt="SynchroAgence — ERP agence de voyage" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async"><span class="p-ph">Visuel produit —&nbsp;/assets/synchroagence.jpg</span></div>
       <div class="p-body">
         <div class="p-head"><span class="p-name">SynchroAgence</span><span class="pbadge live"><i class="d"></i>En production</span></div>
         <p class="p-lead">ERP multi-locataire pour agences de voyage. En production, prêt à la vente et au déploiement.</p>
@@ -944,7 +946,7 @@
     </div>
 
     <div class="product rev">
-      <div class="p-visual"><img src="assets/syncromra.jpg" alt="SyncrOmra — ERP Hajj &amp; Omra" onerror="this.style.display='none'" loading="lazy" decoding="async"><span class="p-ph">Visuel produit —&nbsp;/assets/syncromra.jpg</span></div>
+      <div class="p-visual"><img src="assets/syncromra.jpg" alt="SyncrOmra — ERP Hajj &amp; Omra" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async"><span class="p-ph">Visuel produit —&nbsp;/assets/syncromra.jpg</span></div>
       <div class="p-body">
         <div class="p-head"><span class="p-name">SyncrOmra</span><span class="pbadge prep"><i class="d"></i>Presque finalisé</span></div>
         <p class="p-lead">ERP Hajj &amp; Omra, offline-first. « Gérez votre voyage — avec confiance et intelligence. »</p>
@@ -970,7 +972,7 @@
         <span class="bstate"><i></i>En développement</span>
       </div>
       <div class="bvisual">
-        <img src="assets/synchroniabrain.jpg" alt="SynchroniaBrain — cerveau pour drones et essaims" onerror="this.style.display='none'" loading="lazy" decoding="async">
+        <img src="assets/synchroniabrain.jpg" alt="SynchroniaBrain — cerveau pour drones et essaims" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async">
         <span class="bph">Affiche produit — déposez votre visuel dans&nbsp;/assets/synchroniabrain.jpg</span>
       </div>
     </div>
@@ -995,8 +997,8 @@
 
 <footer><div class="wrap">
   <div class="fgrid">
-    <div class="fcol"><h4>Synchronia Labs</h4><span>Cabinet indépendant · Architecture des systèmes intelligents</span><span>Dar El Beida, Alger — Algérie</span></div>
-    <div class="fcol"><h4>Cabinet</h4><a href="#architecture">Architecture cognitive</a><a href="#espaces">Recherche</a><a href="#espaces">Solutions</a><a href="#espaces">Publications</a></div>
+    <div class="fcol"><h4>Synchronia Labs</h4><span>Institut indépendant · Ingénierie des systèmes intelligents</span><span>Dar El Beida, Alger — Algérie</span></div>
+    <div class="fcol"><h4>Cabinet</h4><a href="#architecture">Architecture</a><a href="#anahybrid-section">Recherche</a><a href="#produits">Solutions</a><a href="#espaces">Les huit espaces</a></div>
     <div class="fcol"><h4>Contact</h4><a href="mailto:contact@synchronia-labs.ai">contact@synchronia-labs.ai</a><a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a><a href="tel:+213559162730">0559 16 27 30</a><a href="https://www.linkedin.com/in/nabil-aknine-198318382" target="_blank" rel="noopener">LinkedIn</a></div>
     <div class="fcol"><h4>Légal</h4><a href="#" id="lnkMentions">Mentions légales</a><a href="#" id="lnkConfid">Confidentialité</a></div>
   </div>
