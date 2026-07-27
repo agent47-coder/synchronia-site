@@ -39,7 +39,7 @@
       },
       "image": { "@id": "https://www.synchronia-labs.ai/#logo" },
       "description": "Institut d'ingénierie des systèmes d'intelligence artificielle et d'architectures cognitives souveraines. Déploiement local (on-premise), systèmes multi-agents, vision par ordinateur et ERP intelligents.",
-      "email": "contact@synchronia-labs.ai",
+      "email": "nabil@synchronia-labs.ai",
       "telephone": "+213559162730",
       "address": {
         "@type": "PostalAddress",
@@ -1158,7 +1158,7 @@
       <div class="field"><label for="cf-msg">Votre projet</label><textarea id="cf-msg" name="message" placeholder="Contexte, objectifs, contraintes…" required></textarea></div>
       <button type="submit" class="btn btn-p send">Envoyer →</button>
       <p class="formstatus" id="formStatus" hidden></p>
-      <p class="alt">Ou directement : <a href="mailto:contact@synchronia-labs.ai">contact@synchronia-labs.ai</a> &nbsp;·&nbsp; <a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a> &nbsp;·&nbsp; <a href="tel:+213559162730">0559 16 27 30</a></p>
+      <p class="alt">Ou directement : <a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a> &nbsp;·&nbsp; <a href="mailto:admin@synchronia-labs.ai">admin@synchronia-labs.ai</a> &nbsp;·&nbsp; <a href="tel:+213559162730">0559 16 27 30</a></p>
     </form>
   </div></section>
 </main>
@@ -1167,7 +1167,7 @@
   <div class="fgrid">
     <div class="fcol"><h4>Synchronia Labs</h4><span>Institut indépendant · Ingénierie des systèmes intelligents</span><span>Dar El Beida, Alger — Algérie</span></div>
     <div class="fcol"><h4>Cabinet</h4><a href="#architecture">Architecture</a><a href="#anahybrid-section">Recherche</a><a href="#produits">Solutions</a><a href="#espaces">Les huit espaces</a></div>
-    <div class="fcol"><h4>Contact</h4><a href="mailto:contact@synchronia-labs.ai">contact@synchronia-labs.ai</a><a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a><a href="tel:+213559162730">0559 16 27 30</a><a href="https://www.linkedin.com/in/nabil-aknine-198318382" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div class="fcol"><h4>Contact</h4><a href="mailto:nabil@synchronia-labs.ai">nabil@synchronia-labs.ai</a><a href="mailto:admin@synchronia-labs.ai">admin@synchronia-labs.ai</a><a href="tel:+213559162730">0559 16 27 30</a><a href="https://www.linkedin.com/in/nabil-aknine-198318382" target="_blank" rel="noopener">LinkedIn</a></div>
     <div class="fcol"><h4>Légal</h4><a href="#" id="lnkMentions">Mentions légales</a><a href="#" id="lnkConfid">Confidentialité</a></div>
   </div>
   <div class="fbottom">© 2026 Synchronia Labs — Conçu comme un système, pas comme une vitrine.</div>
@@ -1190,7 +1190,7 @@
         .catch(function(){
           var sujet='Projet — '+(data.organisation||data.nom||'Prise de contact');
           var corps='Nom : '+data.nom+'\nOrganisation : '+data.organisation+'\nEmail : '+data.email+'\n\n'+data.message;
-          window.location.href='mailto:contact@synchronia-labs.ai?subject='+encodeURIComponent(sujet)+'&body='+encodeURIComponent(corps);
+          window.location.href='mailto:nabil@synchronia-labs.ai?subject='+encodeURIComponent(sujet)+'&body='+encodeURIComponent(corps);
           btn.disabled=false; show('','');
         });
     });
@@ -1227,7 +1227,7 @@
 var LEGAL={
  mentions:{t:"Mentions légales",h:'<button class="close" aria-label="Fermer">Fermer ✕</button><span class="pk">Légal</span><h2>Mentions légales</h2>'
   +'<h3>Éditeur du site</h3><p>Le présent site <b>www.synchronia-labs.ai</b> est édité par <b>Synchronia Labs</b>, EURL de droit algérien.</p>'
-  +'<ul><li>Dénomination : <b>Synchronia Labs</b> (EURL)</li><li>Siège social : Dar El Beida, Alger — Algérie</li><li>Gérant : Nabil Aknine</li><li>Registre de commerce (RC) : <b>[À COMPLÉTER]</b></li><li>NIF : <b>[À COMPLÉTER]</b> · NIS : <b>[À COMPLÉTER]</b></li><li>Capital social : <b>[À COMPLÉTER]</b> DZD</li><li>Contact : contact@synchronia-labs.ai · nabil@synchronia-labs.ai</li><li>Téléphone : 0559 16 27 30 (+213559162730)</li></ul>'
+  +'<ul><li>Dénomination : <b>Synchronia Labs</b> (EURL)</li><li>Siège social : Dar El Beida, Alger — Algérie</li><li>Gérant : Nabil Aknine</li><li>Registre de commerce (RC) : <b>[À COMPLÉTER]</b></li><li>NIF : <b>[À COMPLÉTER]</b> · NIS : <b>[À COMPLÉTER]</b></li><li>Capital social : <b>[À COMPLÉTER]</b> DZD</li><li>Contact : nabil@synchronia-labs.ai · admin@synchronia-labs.ai</li><li>Téléphone : 0559 16 27 30 (+213559162730)</li></ul>'
   +'<h3>Hébergement</h3><p>Site hébergé sur serveur dédié. Hébergeur : <b>[À COMPLÉTER — nom et adresse de l\'hébergeur, ex. Contabo GmbH]</b>.</p>'
   +'<h3>Propriété intellectuelle</h3><p>L\'ensemble des contenus (textes, schémas, visuels, marques Synchronia Labs, SynchroAgence, SyncrOmra, AnaHybrid, SynchroniaBrain) est la propriété exclusive de Synchronia Labs, sauf mention contraire. Toute reproduction sans autorisation est interdite.</p>'
   +'<h3>Responsabilité</h3><p>Synchronia Labs s\'efforce d\'assurer l\'exactitude des informations publiées, sans garantie d\'exhaustivité. Les états de déploiement affichés (en production, en préparation, cible) reflètent l\'avancement réel à la date de publication.</p>'
@@ -1238,7 +1238,7 @@ var LEGAL={
   +'<h3>Finalité</h3><ul><li>Répondre à votre demande et vous proposer une première analyse.</li><li>Assurer le suivi de la relation commerciale que vous initiez.</li></ul><p>Aucune donnée n\'est utilisée à d\'autres fins, ni revendue, ni cédée à un tiers.</p>'
   +'<h3>Conservation</h3><p>Vos données sont conservées le temps nécessaire au traitement de votre demande, puis archivées ou supprimées.</p>'
   +'<h3>Hébergement &amp; souveraineté</h3><p>Les messages sont traités sur notre propre infrastructure. Nous privilégions un hébergement maîtrisé, cohérent avec notre doctrine de souveraineté des données.</p>'
-  +'<h3>Vos droits</h3><p>Vous disposez d\'un droit d\'accès, de rectification et de suppression de vos données. Pour l\'exercer : <b>contact@synchronia-labs.ai</b>.</p>'
+  +'<h3>Vos droits</h3><p>Vous disposez d\'un droit d\'accès, de rectification et de suppression de vos données. Pour l\'exercer : <b>nabil@synchronia-labs.ai</b>.</p>'
   +'<h3>Cookies</h3><p>Ce site n\'utilise pas de cookies de suivi publicitaire. Aucune donnée comportementale n\'est collectée à des fins de traçage.</p>'}
 };
 (function(){
