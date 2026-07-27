@@ -1146,6 +1146,10 @@
     <h2>Parlons de votre projet.</h2>
     <p>Décrivez votre contexte, vos objectifs ou vos contraintes. Nous reviendrons vers vous avec une première analyse et une proposition d'architecture adaptée.</p>
     <form class="cform" id="contactForm">
+      <input type="hidden" name="access_key" value="4024e45b-f3e6-43a6-9bc5-c4e3b7262930">
+      <input type="hidden" name="subject" value="Nouveau contact — synchronia-labs.ai">
+      <input type="hidden" name="from_name" value="Site Synchronia Labs">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none!important;position:absolute;left:-9999px">
       <div class="row">
         <div class="field"><label for="cf-nom">Nom</label><input id="cf-nom" name="nom" type="text" required></div>
         <div class="field"><label for="cf-org">Organisation</label><input id="cf-org" name="org" type="text"></div>
@@ -1176,18 +1180,18 @@
     var show=function(msg,kind){ if(!msg){statusEl.hidden=true;return;} statusEl.hidden=false; statusEl.textContent=msg; statusEl.className='formstatus'+(kind?(' '+kind):''); };
     f.addEventListener('submit',function(e){
       e.preventDefault();
+      if(f.botcheck&&f.botcheck.checked){return;}
       var data={nom:f.nom.value.trim(),organisation:f.org.value.trim(),email:f.email.value.trim(),message:f.message.value.trim()};
       var btn=f.querySelector('button[type=submit]');
       btn.disabled=true; show('Envoi en cours…','');
-      fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-        .then(function(r){ if(!r.ok) throw new Error('http'); return r; })
-        .then(function(){ f.reset(); btn.disabled=false; show('Merci — votre message a bien été transmis. Nous revenons vers vous rapidement.','ok'); })
+      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({access_key:f.access_key.value,subject:f.subject.value,from_name:f.from_name.value,nom:data.nom,organisation:data.organisation,email:data.email,message:data.message})})
+        .then(function(r){ return r.json(); })
+        .then(function(res){ if(res&&res.success){ f.reset(); btn.disabled=false; show('Merci — votre message a bien été transmis. Nous revenons vers vous rapidement.','ok'); } else { throw new Error('web3forms'); } })
         .catch(function(){
-          /* repli : route non déployée → e-mail pré-rempli, jamais un cul-de-sac */
           var sujet='Projet — '+(data.organisation||data.nom||'Prise de contact');
           var corps='Nom : '+data.nom+'\nOrganisation : '+data.organisation+'\nEmail : '+data.email+'\n\n'+data.message;
           window.location.href='mailto:contact@synchronia-labs.ai?subject='+encodeURIComponent(sujet)+'&body='+encodeURIComponent(corps);
-          btn.disabled=false; show('',''); 
+          btn.disabled=false; show('','');
         });
     });
   }
