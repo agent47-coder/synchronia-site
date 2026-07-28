@@ -457,6 +457,13 @@
   .trust-info-wrap{margin:30px 0 8px}
   .trust-info-wrap .cap{font-family:var(--fm);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:12px;display:block;text-align:center}
   .trust-info-wrap img{width:100%;max-width:760px;height:auto;display:block;margin:0 auto;border:1px solid var(--line);border-radius:14px}
+  .p-cta{margin-top:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .p-cta .btn{display:inline-flex}
+  .p-cta .note{font-family:var(--fm);font-size:11px;color:var(--faint)}
+  .p-demo-badge{font-family:var(--fm);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--prep);border:1px solid rgba(233,169,75,.3);background:rgba(233,169,75,.08);border-radius:20px;padding:3px 10px}
+  .p-placeholder{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0E141C,#12141C);min-height:200px;border:1px dashed var(--accent-line);border-radius:8px}
+  .qr-ph{display:flex;flex-direction:column;align-items:center;gap:12px}
+  .qr-ph span{font-family:var(--fm);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
   footer{border-top:1px solid var(--line);padding:40px 0}
   .p-visual .p-ph, .bvisual .bph{display:none}
   .p-visual.noimg .p-ph, .bvisual.noimg .bph{display:flex}
@@ -1028,8 +1035,8 @@
 
   <section class="products" id="produits"><div class="wrap">
     <span class="eyebrow">Solutions — produits</span>
-    <h2>Des ERP prêts à déployer.</h2>
-    <p class="psub">Deux systèmes métier aboutis, conçus et construits en interne.</p>
+    <h2>Nos systèmes métier.</h2>
+    <p class="psub">Trois systèmes métier, conçus et construits en interne. Les démos arrivent — laissez vos coordonnées et soyez prévenu au lancement. L'étude de votre cas est gratuite.</p>
     <div id="produitsGrid">
 
     <div class="product">
@@ -1045,6 +1052,7 @@
           <li>Facturation bilingue français / arabe</li>
         </ul>
         <div class="p-principle"><span>Agents signés (SASS)</span><span>Traçable</span><span>Multi-tenant</span></div>
+        <div class="p-cta"><a href="#contact" class="btn btn-p">Démo bientôt — être prévenu →</a><span class="p-demo-badge">Bientôt</span><span class="note">Laissez vos coordonnées, on vous prévient au lancement</span></div>
       </div>
     </div>
 
@@ -1060,6 +1068,23 @@
           <li>Facturation bilingue — gestion utilisable hors connexion (PWA)</li>
         </ul>
         <div class="p-principle"><span>QR — interface de confiance</span><span>MRZ</span><span>HMAC</span><span>Offline-first</span></div>
+        <div class="p-cta"><a href="#contact" class="btn btn-p">Démo bientôt — être prévenu →</a><span class="p-demo-badge">Bientôt</span><span class="note">Installation en 1 clic, sans Python — on vous prévient</span></div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="p-visual"><img src="assets/synchroniaqr.jpg" alt="SynchroniaQR — commande et menu par QR, écran cuisine et reçu vérifiable" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async"><span class="p-ph">Visuel produit — SynchroniaQR</span></div>
+      <div class="p-body">
+        <div class="p-head"><span class="p-name">SynchroniaQR</span><span class="pbadge prep"><i class="d"></i>Presque finalisé</span></div>
+        <p class="p-lead">Commande, menu et cuisine par QR pour la restauration et le commerce — avec le reçu vérifiable à la clé.</p>
+        <ul class="p-feats">
+          <li>Menu client par QR — commande en salle, sans application à installer</li>
+          <li>Écran cuisine (KDS) en temps réel</li>
+          <li>Reçu signé, non falsifiable — la preuve Synchronia Trust</li>
+          <li>Tableau de bord des commandes et du service</li>
+        </ul>
+        <div class="p-principle"><span>QR de confiance</span><span>Temps réel</span><span>Reçu vérifiable</span></div>
+        <div class="p-cta"><a href="#contact" class="btn btn-p">Démo bientôt — être prévenu →</a><span class="p-demo-badge">Bientôt</span><span class="note">Idéal restaurants, cafés, commerces</span></div>
       </div>
     </div>
     </div>
