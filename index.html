@@ -464,6 +464,22 @@
   .p-placeholder{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0E141C,#12141C);min-height:200px;border:1px dashed var(--accent-line);border-radius:8px}
   .qr-ph{display:flex;flex-direction:column;align-items:center;gap:12px}
   .qr-ph span{font-family:var(--fm);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+  .brain-arch{margin:26px 0 8px}
+  .brain-slogan{font-family:var(--fd);font-weight:600;font-size:clamp(20px,3vw,30px);letter-spacing:-.02em;margin:6px 0 4px}
+  .brain-slogan .grad{font-weight:600}
+  .brain-slogan .en{display:block;font-size:13px;font-family:var(--fm);color:var(--faint);letter-spacing:.1em;margin-top:6px;text-transform:uppercase}
+  .barch-svg{width:100%;max-width:760px;margin:18px auto 0;display:block}
+  .brain-forms{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+  @media(max-width:760px){.brain-forms{grid-template-columns:repeat(2,1fr)}}
+  .bform{border:1px solid var(--line);border-radius:10px;background:var(--bg-el);padding:16px 14px;text-align:center}
+  .bform .ic{font-size:22px;margin-bottom:6px}
+  .bform b{display:block;font-family:var(--fd);font-weight:600;font-size:14px;letter-spacing:-.01em}
+  .bform span{font-size:11.5px;color:var(--faint);line-height:1.4;display:block;margin-top:3px}
+  .brain-honest{margin-top:22px;border:1px solid var(--line);border-radius:12px;background:rgba(233,169,75,.04);padding:22px 24px}
+  .brain-honest h4{font-family:var(--fd);font-weight:600;font-size:15px;color:var(--prep);margin-bottom:8px;display:flex;align-items:center;gap:9px}
+  .brain-honest h4::before{content:'';width:9px;height:9px;border-radius:50%;border:1.6px solid var(--prep)}
+  .brain-honest p{color:var(--text2);font-size:13.5px;line-height:1.65;max-width:66ch}
+  .brain-honest p b{color:var(--text)}
   footer{border-top:1px solid var(--line);padding:40px 0}
   .p-visual .p-ph, .bvisual .bph{display:none}
   .p-visual.noimg .p-ph, .bvisual.noimg .bph{display:flex}
@@ -600,6 +616,7 @@
     <a href="#produits">Solutions</a>
     <a href="#anahybrid-section">Recherche</a>
     <a href="#trust-section">Trust</a>
+    <a href="#brain-section">Autonomie</a>
     <a href="#espaces">Espaces</a>
     <a href="#architecture">Architecture</a>
     <a href="#contact">Contact</a>
@@ -1157,19 +1174,42 @@
 
 
 
-  <section class="brain"><div class="wrap">
-    <div class="bbox">
-      <div class="btext">
-        <span class="eyebrow">Programme de recherche phare</span>
-        <h2>SynchroniaBrain — le cerveau des drones et des essaims.</h2>
-        <p>Un cerveau embarqué pour drones intelligents et flottes robotisées : planification de mission, techniques de vol, contrôle, coordination d'essaims. Domaines visés : agriculture de précision, robotique, supervision de terrain — avec ou sans matériel, par la simulation.</p>
-        <div class="bstack"><span>Vision</span><span>Essaims</span><span>Edge</span></div>
-        <span class="bstate"><i></i>En développement</span>
-      </div>
-      <div class="bvisual">
-        <img src="assets/synchroniabrain.jpg" alt="SynchroniaBrain — cerveau pour drones et essaims" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async">
-        <span class="bph">Affiche produit — déposez votre visuel dans&nbsp;/assets/synchroniabrain.jpg</span>
-      </div>
+  <section class="brain" id="brain-section"><div class="wrap">
+    <span class="eyebrow">Programme de recherche · autonomie</span>
+    <h2 style="font-family:var(--fd);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.025em;line-height:1.08;margin:12px 0 8px">SynchroniaBrain — <span class="grad">le cerveau universel</span> des machines autonomes.</h2>
+    <p class="brain-slogan">Un cerveau. <span class="grad">Une infinité de machines.</span><span class="en">One brain · infinite machines</span></p>
+    <p style="color:var(--text2);font-size:16px;line-height:1.7;max-width:70ch;margin-top:14px">La plupart des robots sont conçus un par un, chacun avec sa propre intelligence figée. <b style="color:var(--text)">SynchroniaBrain explore l'inverse</b> : un même cœur cognitif — perception, planification, décision, coordination — capable d'animer plusieurs corps. Un cerveau, plusieurs machines. C'est un programme de recherche, pas encore un produit fini — et nous le disons.</p>
+
+    <div class="trust-poster-wrap" style="margin:24px 0 8px"><img src="assets/brain-poster.jpg" alt="SynchroniaBrain — un cerveau, une infinité de machines" loading="lazy" decoding="async"></div>
+    <div class="brain-arch">
+      <svg class="barch-svg" viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture : un cerveau, plusieurs machines">
+        <defs><linearGradient id="bl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3DDC97"/></linearGradient>
+        <filter id="bg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <rect x="290" y="20" width="180" height="52" rx="10" fill="#0E141C" stroke="url(#bl)" stroke-width="2" filter="url(#bg)"/>
+        <text x="380" y="42" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-weight="600" font-size="15" fill="#EAEEF5">SynchroniaBrain</text>
+        <text x="380" y="60" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9.5" fill="#3DDC97">perception · décision · coordination</text>
+        <g stroke="#3DDC97" stroke-width="1.4" opacity=".7" fill="none" filter="url(#bg)">
+          <path d="M380 72 V100 M110 140 V100 H650 V140 M300 100 V140 M460 100 V140"/>
+        </g>
+        <g font-family="'Space Grotesk',sans-serif" font-weight="500" font-size="13" fill="#EAEEF5">
+          <rect x="50" y="140" width="130" height="50" rx="8" fill="#12141C" stroke="#2A3547"/><text x="115" y="170" text-anchor="middle">Rover mobile</text>
+          <rect x="235" y="140" width="130" height="50" rx="8" fill="#12141C" stroke="#2A3547"/><text x="300" y="170" text-anchor="middle">Drone</text>
+          <rect x="395" y="140" width="130" height="50" rx="8" fill="#12141C" stroke="#2A3547"/><text x="460" y="170" text-anchor="middle">AGV / charge</text>
+          <rect x="580" y="140" width="130" height="50" rx="8" fill="#12141C" stroke="#2A3547"/><text x="645" y="170" text-anchor="middle">Bras robotisé</text>
+        </g>
+        <text x="380" y="230" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10.5" letter-spacing="2" fill="#5B6678">MÊME CERVEAU · CORPS DIFFÉRENTS</text>
+      </svg>
+    </div>
+
+    <div class="brain-forms">
+      <div class="bform"><div class="ic">🤖</div><b>Rover</b><span>Inspection &amp; supervision mobile</span></div>
+      <div class="bform"><div class="ic">🚁</div><b>Drone</b><span>Inspection autonome par les airs</span></div>
+      <div class="bform"><div class="ic">📦</div><b>AGV</b><span>Transport autonome de charges</span></div>
+      <div class="bform"><div class="ic">🦾</div><b>Bras</b><span>Manipulation robotisée</span></div>
+    </div>
+
+    <div class="brain-honest"><h4>Ce que nous ne prétendons pas</h4>
+      <p>SynchroniaBrain est un <b>programme de recherche</b>, développé aujourd'hui par la simulation (stacks robotiques éprouvés). Les machines ci-dessus sont l'architecture <b>visée</b>, pas une gamme livrée. Nous ne vendons pas de robot aujourd'hui — nous construisons le cerveau qui, demain, pourra les animer. La preuve avant la promesse, ici comme ailleurs.</p>
     </div>
   </div></section>
 
