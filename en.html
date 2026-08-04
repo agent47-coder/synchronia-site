@@ -959,7 +959,7 @@
       </div>
       <div class="pcard">
         <div class="ph"><span class="pn">Critical infrastructure</span><span class="pb anon"><i class="d"></i>Anonymized case</span></div>
-        <p>Audit and remediation of a critical infrastructure of <span class="metric">335 assets</span>, with a measurable improvement in operational availability in under three weeks.</p>
+        <p>Audit and remediation of <span class="metric">critical IT infrastructures</span> — inventory, remediation, availability restoration. Cases presented anonymized.</p>
       </div>
     </div>
   </div></section>
@@ -1094,7 +1094,7 @@
     <p class="brain-slogan">One brain. <span class="grad">Infinite machines.</span><span class="en">One brain · infinite machines</span></p>
     <p style="color:var(--text2);font-size:16px;line-height:1.7;max-width:70ch;margin-top:14px">Most robots are designed one by one, each with its own frozen intelligence. <b style="color:var(--text)">SynchroniaBrain explores the opposite</b>: a single cognitive core — perception, planning, decision, coordination — able to drive several bodies. One brain, many machines. It's a research programme, not a finished product yet — and we say so.</p>
 
-    <div class="trust-poster-wrap" style="margin:24px 0 8px"><img src="assets/brain-poster.jpg" alt="SynchroniaBrain — one brain, infinite machines" loading="lazy" decoding="async"></div>
+    <div class="trust-poster-wrap" style="margin:24px 0 8px"><img src="assets/en/brain-poster.jpg" alt="SynchroniaBrain — one brain, infinite machines" loading="lazy" decoding="async"></div>
     
 
     
@@ -1144,7 +1144,7 @@
       btn.disabled=true; show('Sending…','');
       fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({access_key:f.access_key.value,subject:f.subject.value,from_name:f.from_name.value,nom:data.nom,organisation:data.organisation,email:data.email,message:data.message})})
         .then(function(r){ return r.json(); })
-        .then(function(res){ if(res&&res.success){ f.reset(); btn.disabled=false; show('Thank you — your message has been sent. We'll get back to you shortly.','ok'); } else { throw new Error('web3forms'); } })
+        .then(function(res){ if(res&&res.success){ f.reset(); btn.disabled=false; show('Thank you — your message has been sent. We\'ll get back to you shortly.','ok'); } else { throw new Error('web3forms'); } })
         .catch(function(){
           var sujet='Projet — '+(data.organisation||data.nom||'Prise de contact');
           var corps='Nom : '+data.nom+'\nOrganisation : '+data.organisation+'\nEmail : '+data.email+'\n\n'+data.message;
@@ -1287,7 +1287,7 @@ E3:{t:"Development",st:"on",lb:"Active",intro:"When the product does not exist, 
 E4:{t:"Audit & Consulting",st:"on",lb:"Active",intro:"Diagnostics, information-system urbanization, cybersecurity: see clearly before you build.",
  sec:[
   {h:"Our engagements",ul:["<b>Estate and infrastructure diagnostics</b> — inventory, criticality, upgrade plan.","<b>IS urbanization</b> — systems mapping, rationalization, target trajectory.","<b>Cybersecurity</b> — server hardening, secrets management, exposure surface.","<b>Documentary compliance</b> — every recommendation traces to a specific requirement."]},
-  {h:"A reference",p:"Audit and remediation of a critical infrastructure of 335 assets — measurable improvement in operational availability in under three weeks. (Anonymized case.)"},
+  {h:"A reference",p:"Audit and remediation of critical IT infrastructures: inventory, remediation, availability restoration. Cases presented anonymized."},
   {h:"Deliverables",p:"Signed audit report, prioritized action plan, and if you wish: execution of the plan by us.",cta:{txt:"Request a diagnostic →",href:"#contact"}}
  ]},
 E5:{t:"Training",st:"off",lb:"In progress",intro:"Transmitting real practice — not detached theory. Opening soon.",
