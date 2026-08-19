@@ -1006,10 +1006,10 @@
         <ul class="p-feats">
           <li>مسح جواز السفر MRZ بالذكاء الاصطناعي — تعبئة تلقائية للملف (يتطلّب المسح اتصالاً)</li>
           <li>مسار الحاج في تسع مراحل</li>
-          <li>سلسلة إيصالات موقّعة HMAC — كل دفعة قابلة للتحقّق</li>
+          <li>سلسلة إيصالات موقّعة وقابلة للتحقّق — كل دفعة قابلة للمراجعة</li>
           <li>فوترة ثنائية اللغة — إدارة قابلة للاستعمال دون اتصال (PWA)</li>
         </ul>
-        <div class="p-principle"><span>QR — واجهة الثقة</span><span>MRZ</span><span>HMAC</span><span>دون اتصال أوّلاً</span></div>
+        <div class="p-principle"><span>QR — واجهة الثقة</span><span>MRZ</span><span>موقّع وقابل للتحقّق</span><span>دون اتصال أوّلاً</span></div>
         <div class="p-cta"><a href="#contact" class="btn btn-p">عرض قريبًا — أعلِمني ←</a><span class="p-demo-badge">قريبًا</span><span class="note">تثبيت بنقرة واحدة، دون Python — نُعلمك</span></div>
       </div>
     </div>
@@ -1048,7 +1048,7 @@
       <h3 style="font-family:var(--fd);font-weight:600;font-size:17px;margin:28px 0 12px">عملية الثقة</h3>
       <div class="flow"><div class="flow-steps">
         <div class="st"><span class="i">01</span><b>توليد</b></div>
-        <div class="st key"><span class="i">02</span><b>توقيع · HMAC</b></div>
+        <div class="st key"><span class="i">02</span><b>توقيع</b></div>
         <div class="st"><span class="i">03</span><b>إصدار</b></div>
         <div class="st"><span class="i">04</span><b>مسح</b></div>
         <div class="st key"><span class="i">05</span><b>تحقّق</b></div>
@@ -1060,7 +1060,7 @@
       <div class="trust-forms">
         <div class="tform"><span class="badge on">مُطوَّر</span><h3>Trust Restauration</h3><div class="k">SynchroniaQR</div><p>قائمة، طلب ومطبخ (KDS) عبر QR — والإيصال القابل للتحقّق.</p><ul><li>قائمة الزبون عبر QR، طلب في القاعة</li><li>شاشة المطبخ في الوقت الحقيقي</li><li>إيصال موقّع، غير قابل للتزوير</li></ul></div>
         <div class="tform"><span class="badge prep">قيد الإنشاء</span><h3>Trust Commerce</h3><div class="k">مؤسسات وإدارات</div><p>إيصالات، سندات، شهادات، وثائق رسمية — كلٌّ يحمل دليله.</p><ul><li>الوثيقة = أصل رقمي قابل للتحقّق</li><li>مضاد للنسخ، مضاد للتزوير</li><li>سجلّ المصادقة</li></ul></div>
-        <div class="tform"><span class="badge on">قيد الإنتاج</span><h3>Trust Pèlerinage</h3><div class="k">SyncrOmra</div><p>سلسلة إيصالات HMAC: كل دفعة للحاج قابلة للتحقّق، من الدفعة الأولى إلى الأخيرة.</p><ul><li>إيصالات موقّعة HMAC — واقعية بالفعل</li><li>سلسلة أدلّة مستمرّة</li><li>قابل للتحقّق دون اتصال</li></ul></div>
+        <div class="tform"><span class="badge on">قيد الإنتاج</span><h3>Trust Pèlerinage</h3><div class="k">SyncrOmra</div><p>سلسلة إيصالات موقّعة وقابلة للتحقّق: كل دفعة للحاج قابلة للمراجعة، من الدفعة الأولى إلى الأخيرة.</p><ul><li>إيصالات موقّعة وقابلة للتحقّق — واقعية بالفعل</li><li>سلسلة أدلّة مستمرّة</li><li>قابل للتحقّق دون اتصال</li></ul></div>
       </div>
 
       <div style="margin:22px 0 4px;display:flex;flex-wrap:wrap;gap:8px;align-items:center">
@@ -1075,7 +1075,7 @@
       <p class="rlead" style="color:var(--text2);font-size:15px;line-height:1.7;max-width:68ch;margin-bottom:14px">ثلاثة أعمدة — <b style="color:var(--text)">الهوية، QR، التوقيع</b> — تغذّيها منتجاتنا الحقيقية، وتوحّدها واجهة برمجية للتحقّق. إنه الأساس الذي تستند إليه بقية أنظمة Synchronia.</p>
       <div class="trust-state">
         <div class="col real"><h4>ما يعمل بالفعل</h4><ul>
-          <li>سلسلة إيصالات HMAC قيد الإنتاج في SyncrOmra.</li>
+          <li>سلسلة إيصالات موقّعة وقابلة للتحقّق قيد الإنتاج في SyncrOmra.</li>
           <li>SynchroniaQR مُطوَّر (قائمة، طلب، مطبخ).</li>
           <li>وكلاء موقّعون وقابلون للتتبّع (معيار SASS).</li>
           <li>توقيع وتحقّق تشفيريان مُختبَران.</li>
