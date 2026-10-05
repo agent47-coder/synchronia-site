@@ -495,6 +495,15 @@
   .pp .b{margin-top:auto;font-family:var(--fm);font-size:11.5px;text-align:center;color:#05201a;background:linear-gradient(120deg,var(--accent),#7cf0bf);border-radius:7px;padding:8px;text-decoration:none}
   @media(max-width:640px){.pp-grid{grid-template-columns:1fr}}
   .pp-note{margin-top:10px;font-family:var(--fm);font-size:11px;color:var(--text2);text-align:center}
+  .sol-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
+  .solc{display:flex;flex-direction:column;gap:9px;border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--bg-el);text-decoration:none;transition:border-color .2s,transform .2s}
+  a.solc:hover{border-color:var(--accent-line);transform:translateY(-2px)}
+  .solc-h{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .solc-n{font-family:var(--fd);font-weight:600;font-size:17px;color:var(--text)}
+  .solc-d{color:var(--text2);font-size:13.5px;line-height:1.5;flex:1}
+  .solc-go{font-family:var(--fm);font-size:12px;color:var(--accent)}
+  .solc-go.soon{color:var(--faint)}
+  @media(max-width:640px){.sol-grid{grid-template-columns:1fr}}
   .p-demo-badge{font-family:var(--fm);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--prep);border:1px solid rgba(233,169,75,.3);background:rgba(233,169,75,.08);border-radius:20px;padding:3px 10px}
   .p-flow{margin:12px 0 4px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(61,220,151,.035)}
   .p-flow .row{display:flex;flex-wrap:wrap;gap:7px 6px;align-items:center;font-family:var(--fm);font-size:11px}
@@ -983,62 +992,14 @@
   </div></section>
 
   <section class="products" id="produits"><div class="wrap">
-    <span class="eyebrow">الحلول — منتجات</span>
-    <h2>أنظمة ERP لدينا.</h2>
-    <p class="psub">أنظمة ERP مهنية لدينا، مُصمّمة ومبنيّة داخليًا. اكتشف حلولنا واطلب عرضًا توضيحيًا. دراسة حالتك مجانية.</p>
-    <div id="produitsGrid">
-
-    <div class="product">
-      <div class="p-visual"><img src="assets/synchroagence.jpg" alt="SynchroAgence — ERP agence de voyage" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async"><span class="p-ph">صورة المنتج —&nbsp;/assets/synchroagence.jpg</span></div>
-      <div class="p-body">
-        <div class="p-head"><span class="p-name">SynchroAgence</span><span class="pbadge live"><i class="d"></i>قيد الإنتاج</span></div>
-        <p class="p-lead"><b style="color:var(--text)">إدخال واحد. كل المسار.</b> يكتب العون أو يُملي في الكاونتر، بالدارجة أو الفرنسية. يفهم النظام ويُنشئ الملف. ومن هناك، تُغذّي المعلومة نفسها عرض السعر والفاتورة والدفع والأقساط والمتابعة — دون إعادة إدخالها ولو مرة واحدة.</p>
-        <div class="p-flow"><div class="row"><span class="node">الكاونتر</span><span class="ar">←</span><span class="node">الملف</span><span class="ar">←</span><span class="node">عرض السعر</span><span class="ar">←</span><span class="node">الفاتورة</span><span class="ar">←</span><span class="node">الدفع</span><span class="ar">←</span><span class="node">المتابعة</span></div><div class="cap">إدخال واحد، وكل شيء ينتشر</div></div>
-        <ul class="p-feats">
-          <li>كل دفعة تُحدّث المتابعة والأقساط تلقائيًا دون تدخّل</li>
-          <li>تخرج الفاتورة ثنائية اللغة، مع المعلومات الجبائية جاهزة</li>
-          <li>متعدّد المستأجرين: لكل وكالة بياناتها وشعارها وفوترتها</li>
-        </ul>
-        <div class="p-principle"><span>مؤتمت</span><span>ثنائي اللغة</span><span>متعدّد الوكالات</span></div>
-        <div class="p-pricing"><div class="pp-t">الأسعار</div><div class="pp-grid"><div class="pp"><div class="n">فردي</div><div class="pr">4 900<small> دج/شهر</small></div><div class="u">مستخدم واحد · ERP كامل</div><a href="https://wa.me/213559513598?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D9%8A%D9%87%D9%85%D9%91%D9%86%D9%8A%20%D8%B9%D8%B1%D8%B6%20%C2%AB%D9%81%D8%B1%D8%AF%D9%8A%C2%BB%20%D9%85%D9%86%20SynchroAgence%20%284%20900%20%D8%AF%D8%AC/%D8%B4%D9%87%D8%B1%29.%20%5BSA-START%5D" target="_blank" rel="noopener" class="b">اختيار</a></div><div class="pp feat"><div class="tag">الأكثر اختيارًا</div><div class="n">فريق</div><div class="pr">7 900<small> دج/شهر</small></div><div class="u">2–3 مستخدمين · عمل تعاوني (مهام وتوزيع)</div><a href="https://wa.me/213559513598?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D9%8A%D9%87%D9%85%D9%91%D9%86%D9%8A%20%D8%B9%D8%B1%D8%B6%20%C2%AB%D9%81%D8%B1%D9%8A%D9%82%C2%BB%20%D9%85%D9%86%20SynchroAgence%20%287%20900%20%D8%AF%D8%AC/%D8%B4%D9%87%D8%B1%29.%20%5BSA-PRO%5D" target="_blank" rel="noopener" class="b">اختيار</a></div><div class="pp"><div class="n">متعدّد الوكالات</div><div class="pr">14 900<small> دج/شهر</small></div><div class="u">4–5 مستخدمين · إشراف متعدّد الوكالات</div><a href="https://wa.me/213559513598?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D9%8A%D9%87%D9%85%D9%91%D9%86%D9%8A%20%D8%B9%D8%B1%D8%B6%20%C2%AB%D9%85%D8%AA%D8%B9%D8%AF%D9%91%D8%AF%20%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA%C2%BB%20%D9%85%D9%86%20SynchroAgence%20%2814%20900%20%D8%AF%D8%AC/%D8%B4%D9%87%D8%B1%29.%20%5BSA-PREMIUM%5D" target="_blank" rel="noopener" class="b">اختيار</a></div></div><div class="pp-note">كل العروض تشمل ERP الكامل. يتطوّر السعر مع حجم وكالتك.</div></div>
-</div>
-        <div class="p-cta"><a href="https://wa.me/213559513598?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%AF%D9%8A%D8%B1%20%D9%88%D9%83%D8%A7%D9%84%D8%A9%20%D8%A3%D8%B3%D9%81%D8%A7%D8%B1%20%D9%88%D8%A3%D9%88%D8%AF%D9%91%20%D8%B1%D8%A4%D9%8A%D8%A9%20SynchroAgence.%20%5BSA-DEMO%5D" target="_blank" rel="noopener" class="btn btn-p"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="margin-inline-end:7px;vertical-align:-2px"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.5-1.2-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.2.1-.3.3-.1.5.1.3.7 1.1 1.4 1.8 1 .8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg>اطلب عرضًا توضيحيًا</a><a href="#contact" style="font-family:var(--fm);font-size:11px;color:var(--faint);text-decoration:none;margin-top:9px;display:inline-block">أو راسِلنا ←</a></div>
-      </div>
-    </div>
-
-    <div class="product rev">
-      <div class="p-visual"><img src="assets/syncromra.jpg" alt="SyncrOmra — ERP Hajj &amp; Omra" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async"><span class="p-ph">صورة المنتج —&nbsp;/assets/syncromra.jpg</span></div>
-      <div class="p-body">
-        <div class="p-head"><span class="p-name">SyncrOmra</span><span class="pbadge prep"><i class="d"></i>شبه مكتمل</span></div>
-        <p class="p-lead"><b style="color:var(--text)">«معتمر واحد · رمز واحد · مسار كامل — مُدار، مُثبَت، مُتابَع»</b> نظام يرافق المعتمر من التسجيل إلى العودة، ويمنح عائلته متابعة مباشرة عبر رمز QR.</p>
-        <div class="p-flow"><div class="row"><span class="node">الاستفسار</span><span class="ar">←</span><span class="node">التسجيل</span><span class="ar">←</span><span class="node">الدفع</span><span class="ar">←</span><span class="node">التأشيرة</span><span class="ar">←</span><span class="node">التأكيد</span><span class="ar">←</span><span class="node">المغادرة</span><span class="ar">←</span><span class="node">أداء المناسك</span><span class="ar">←</span><span class="node">العودة</span><span class="ar">←</span><span class="node">الأرشفة</span></div><div class="cap">معتمر واحد · رمز واحد · كل المسار</div></div>
-        <ul class="p-feats">
-          <li>متابعة العائلة مباشرة — تمسح العائلة رمز QR فترى أين وصل معتمرها ومعه فوجه، في كل مرحلة</li>
-          <li>وصولات موقّعة لا تُزوّر — كل دفعة مختومة رقميًا ويمكن التحقّق منها</li>
-          <li>ملف المعتمر كامل — جواز، صورة، تلقيح، عقد، دفعات، تأشيرة: كلها في مكان واحد</li>
-          <li>بياناتك عندك 100٪ — يعمل دون إنترنت، لا شيء يغادر جهاز الوكالة</li>
-          <li>بالعربية والفرنسية — فوترة قانونية جاهزة</li>
-        </ul>
-        <div class="p-principle"><span>متابعة العائلة</span><span>QR الثقة</span><span>موقّع وقابل للتحقّق</span><span>دون اتصال</span></div>
-        <div class="p-cta"><a href="#contact" class="btn btn-p">عرض قريبًا — أعلِمني ←</a><span class="p-demo-badge">قريبًا</span><span class="note">تثبيت بنقرة واحدة، دون Python — نُعلمك</span></div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="p-visual"><img src="assets/synchroniaqr.jpg" alt="SynchroniaQR — commande et menu par QR, écran cuisine et reçu vérifiable" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" loading="lazy" decoding="async"><span class="p-ph">صورة المنتج — SynchroniaQR</span></div>
-      <div class="p-body">
-        <div class="p-head"><span class="p-name">SynchroniaQR</span><span class="pbadge prep"><i class="d"></i>شبه مكتمل</span></div>
-        <p class="p-lead">الطلب والقائمة والمطبخ عبر QR للمطاعم والتجارة — مع الإيصال القابل للتحقّق.</p>
-        <ul class="p-feats">
-          <li>قائمة الزبون عبر QR — طلب في القاعة، دون تطبيق للتثبيت</li>
-          <li>شاشة المطبخ (KDS) في الوقت الحقيقي</li>
-          <li>إيصال موقّع، غير قابل للتزوير — دليل Synchronia Trust</li>
-          <li>لوحة قيادة للطلبات والخدمة</li>
-        </ul>
-        <div class="p-principle"><span>QR الثقة</span><span>الوقت الحقيقي</span><span>إيصال قابل للتحقّق</span></div>
-        <div class="p-cta"><a href="#contact" class="btn btn-p">عرض قريبًا — أعلِمني ←</a><span class="p-demo-badge">قريبًا</span><span class="note">مثالي للمطاعم والمقاهي والمتاجر</span></div>
-      </div>
-    </div>
+    <span class="eyebrow">حلولنا</span>
+    <h2>نظام لكل مهنة.</h2>
+    <p class="psub">لكل حل صفحته الخاصة — الوظائف، العرض والتفاصيل. مُصمّمة ومبنيّة داخليًا.</p>
+    <div class="sol-grid">
+      <a class="solc" href="/synchroagence"><div class="solc-h"><span class="solc-n">SynchroAgence</span><span class="pbadge live"><i class="d"></i>قيد الإنتاج</span></div><p class="solc-d">نظام ERP الذكي لوكالات الأسفار. إدخال واحد، كل المسار.</p><span class="solc-go">اكتشف ←</span></a>
+      <a class="solc" href="/synchroniabrain"><div class="solc-h"><span class="solc-n">SynchroniaBrain</span><span class="pbadge prep"><i class="d"></i>بحث</span></div><p class="solc-d">دماغ للطائرات المسيّرة والروبوتات. لا ذكاء اصطناعي يملك القرار النهائي في فعل فيزيائي.</p><span class="solc-go">اكتشف ←</span></a>
+      <div class="solc"><div class="solc-h"><span class="solc-n">SyncrOmra</span><span class="pbadge prep"><i class="d"></i>شبه مكتمل</span></div><p class="solc-d">نظام ERP للحج والعمرة. متابعة المعتمر عبر QR، إيصالات قابلة للتحقّق.</p><span class="solc-go soon">الصفحة قريبًا</span></div>
+      <div class="solc"><div class="solc-h"><span class="solc-n">SynchroniaQR</span><span class="pbadge prep"><i class="d"></i>شبه مكتمل</span></div><p class="solc-d">الطلب والقائمة والمطبخ عبر QR — مع الإيصال القابل للتحقّق.</p><span class="solc-go soon">الصفحة قريبًا</span></div>
     </div>
   </div></section>
 
@@ -1111,7 +1072,7 @@
 
   <section class="brain" id="brain-section"><div class="wrap">
     <span class="eyebrow">برنامج بحثي · استقلالية</span>
-    <h2 style="font-family:var(--fd);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.025em;line-height:1.08;margin:12px 0 8px">SynchroniaBrain — <span class="grad">الدماغ الكوني</span> للآلات الذاتية.</h2>
+    <h2 style="font-family:var(--fd);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.025em;line-height:1.08;margin:12px 0 8px">SynchroniaBrain — <span class="grad">حوكمة</span> فرق من الآلات الذاتية.</h2>
     <p class="brain-slogan">دماغ واحد. <span class="grad">آلات لا حصر لها.</span><span class="en">One brain · infinite machines</span></p>
     <p style="color:var(--text2);font-size:16px;line-height:1.7;max-width:70ch;margin-top:14px">معظم الروبوتات تُصمَّم واحدًا واحدًا، لكلٍّ ذكاؤه الجامد. <b style="color:var(--text)">SynchroniaBrain يستكشف العكس</b>: قلب معرفي واحد — إدراك، تخطيط، قرار، تنسيق — قادر على تحريك عدّة أجسام. دماغ واحد، آلات متعدّدة. إنه برنامج بحثي، وليس منتجًا نهائيًا بعد — ونحن نقول ذلك.</p>
 
