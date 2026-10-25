@@ -28,3 +28,9 @@
  .mo .rv{opacity:1;transform:none;transition:none}
  .grad,.btn-p::after,.btn-disc,.p-flow .node,.p-flow .ar,.pstate i,.eyebrow::before{animation:none}
 }
+
+.nav-games{color:var(--accent2)!important;position:relative;font-weight:600;display:inline-flex;align-items:center;white-space:nowrap}
+.nav-games::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent2);margin-inline-end:6px;vertical-align:middle;animation:blink 1.8s ease-in-out infinite}
+.gband{padding:8px 0 40px}
+.gb{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border:1px solid rgba(34,211,238,.35);border-radius:14px;padding:22px 26px;background:linear-gradient(120deg,rgba(34,211,238,.09),rgba(61,220,151,.07))}
+.gb p{margin:6px 0 0;color:var(--text);font-size:16px}
