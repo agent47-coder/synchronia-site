@@ -50,3 +50,7 @@
 .tlf .tlf-q b{color:var(--text);font-family:var(--fd);font-size:15px;display:block;margin-bottom:2px}
 .tlf .tlf-b{font-family:var(--fm);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--prep,#e8b04a);margin-inline-start:10px}
 @media(max-width:860px){.tlf-g{grid-template-columns:1fr;padding:18px}}
+
+.tl-gal{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.tl-gal .tl-vis{margin:0}
+@media(max-width:760px){.tl-gal{grid-template-columns:1fr}}
